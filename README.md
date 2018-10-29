@@ -19,6 +19,7 @@ Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal ei
 - stirbt bei Berührung mit Sonne 
 - Stein geht kaputt bei Berührung mit Elch 
 - Sound bei Tod und Sprung 
+- "Wasted" 
 
 ### Montag, der 03.09.2018
 - Sprungsystem (Screenshot)
@@ -29,23 +30,35 @@ Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal ei
   - freies Springen horizontal
   
 ### Sonntag, der 09.09.2018
+- Anpassung der Kamera
+- Fixierung des Hintergrundes auf den Elch 
+- probierte Überarbeitung des Springens
 
 ### Montag, der 10.09.2018
+- Orga & Ordnung
+- Animation "nini" und "tim" 
 
-
-### Dienstagr 11.09.2018
-
+### Dienstag, der 11.09.2018
+- Überarbeitung des Springens 
+- zweiter Ground 
+  - flüssigerer Übergang 
 
 ### Montag, der 17.09.2018
-
+- Option Rauszoomen für Übersicht beim Arbeiten 
 
 ### Dienstag, der 18.09.2018
+- Konzept "Smuush"
+- Festsetzung der Kamera 
+- Festsetzen Ground 
+- neue Steuerung nini "wasd"
+- Marcel Davis für Elch 
 
+### Montag, der 22.10.2018
+- Siegerbildschirm "Marcel won, Nini won" 
+- Sprungüberarbeitung für beide 
+- Todesursachen für beide 
 
-###
-
-
-###
+### Montag, der 29.10.2018
 
 
 ###
