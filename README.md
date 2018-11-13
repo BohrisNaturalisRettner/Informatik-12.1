@@ -61,4 +61,19 @@ Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal ei
 ### Montag, der 29.10.2018
 
 
-###
+### Dienstag, der 30.10.2018
+
+
+### Dienstag, der 06.11.2018
+
+
+### Montag, der 12.11.2018
+- neue Sprungkonfig 
+  - upward speed mit negativ Beschleunigung (9,81)
+
+### Dienstag, der 13.11.2018
+- Erhöhung "ground2" 
+  - dementsprechende Anpassung der Sprunghöhe 
+- Text "start" Konfig 
+- Kräftegleichgewicht Nini und marci 
+
