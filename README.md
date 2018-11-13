@@ -1,10 +1,5 @@
-# Informatik-12.1
+# Informatik-12.1 - Stundenprotokoll
 
-[Headers] (#headers)
-
-<a name= "headers"/>
-
-## STUNDENPROTOKOLL
 
 ### Dienstag, der 21.08.2018
 Heute haben wir die erste Doppelstunde in Informatik. Nach einer kurzen Einführung von Herrn Buhl, schauten wir uns auf seiner Read.me um und machten uns schon mit den verschiedenen Programmen ein wenig vertraut. Ohne jedoch eine endgültige Entscheidung getroffen zu haben endete die Doppelstunde.
