@@ -9,7 +9,7 @@
 
 ### Monatg, der 27.08.2018
 Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus. Heute haben wir uns mit beiden Seiten näher auseinandergesetzt und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Die nähere Auseinandersetzung mit beiden Programmen bestand überwiegend daraus, dass wir zum  Beispiel auf Applab mit Buttons und Slidern herumprobiert haben und die generelle Funktionsweise des Programms verstehen wollten. 
-  ![bsp Applab](image/Applab Button.jpg)
+  ! [bsp Applab](image/Applab Button.jpg)
 
 ### Dienstag, der 28.08.2018
 - Applab und Gamelab
