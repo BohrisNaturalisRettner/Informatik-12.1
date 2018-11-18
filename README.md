@@ -2,13 +2,18 @@
 
 
 ### Dienstag, der 21.08.2018
-Heute haben wir die erste Doppelstunde in Informatik. Nach einer kurzen Einführung von Herrn Buhl, schauten wir uns auf seiner Read.me um und machten uns schon mit den verschiedenen Programmen ein wenig vertraut. Ohne jedoch eine endgültige Entscheidung getroffen zu haben endete die Doppelstunde.
+- Einführung von Herrn Buhl
+- eigenständige Beschäftigung mit seiner Readme 
+  (https://github.com/jbuhl/InformatikUnterricht)
+- Programmsichtung
 
 ### Monatg, der 27.08.2018
-In dieser Stunde haben wir uns näher mit den Programmen Applab und Greenfoot auseinandergesetzt. Wir haben uns zuhause weitergehend informiert und sind bei diesen beiden hängengeblieben. Um eine Entscheidung treffen zu können, probierten wir in beiden Programmen etwas herum und stellten schnell fest, dass wir mit Applab besser zurecht kamen. Wir waren auf Applab schon soweit auch erste Buttons und Slider zu erstellen und mit einfachen Funktionen zu versehen.
+Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus. Heute haben wir uns mit beiden Seiten näher auseinandergesetzt und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Die nähere Auseinandersetzung mit beiden Programmen bestand überwiegend daraus, dass wir zum  Beispiel auf Applab mit Buttons und Slidern herumprobiert haben und die generelle Funktionsweise des Programms verstehen wollten. 
+
 
 ### Dienstag, der 28.08.2018
-Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal eine Entscheidung zugunsten von Applab getroffen. Bei Applab haben wir uns nun auch näher mit Sprites und ähnlichem auseinandergesetzt. Gleichzeitig haben wir auf der Seite "code.org" auf der es Applab gibt auch Gamelab entdeckt. Dieses hat uns angesprochen
+- Applab und Gamelab
+- Entscheidung zugunsten von Gamelab 
 
 ### Sonntag, der 02.09.2018
 - neues Konzept
@@ -34,8 +39,10 @@ Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal ei
 - probierte Überarbeitung des Springens
 
 ### Montag, der 10.09.2018
-- Orga & Ordnung
-- Animation "nini" und "tim" 
+Heute haben wir es uns zur Aufgabe gemacht den vorhandenen Code zu organisieren und zu ordnen so gut es geht, um auf der einen Seite die Programmierung anschaulich und verständlich zu machen, aber auch um uns selber die spätere Arbeit zu erleichtern.
+  (Vorher, Nachher Bilder????)
+Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Eine sollte als zweite Charakter neben dem Elch dienen und heißt "nini". Als Animation haben wir ein Foto von Adriana genutzt. Der Andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim und heißt auch "Tim". Letztere diente überwiegend unserem eigenen Vergnügen und sollte eine Anspielung an die "Teletubbies" sein.
+  (Bilder!!!)
 
 ### Dienstag, der 11.09.2018
 - Überarbeitung des Springens 
@@ -74,5 +81,5 @@ Nachdem wir in Applab besser zurecht kamen als in Greenfoot haben wir erstmal ei
 - Erhöhung "ground2" 
   - dementsprechende Anpassung der Sprunghöhe 
 - Text "start" Konfig 
-- Kräftegleichgewicht Nini und marci 
+- Arbeiten am Kräftegleichgewicht Nini und marci 
 
