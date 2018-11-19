@@ -14,33 +14,28 @@ Während unserer Arbeit auf Applab, haben wir auf der seite code.org auch Gamela
 Auch außerhalb des Unterrichts haben wir uns mit Informatik beschäftigt. An diesem Sonntag entstand unser erstes richtiges Konzept. Das Spiel sollte ein "Jump 'n Run" werden. Wir begannen auch direkt mit der Umsetzung. Zunächst erstellten wir den Hintergrund, eine Sonne, einen ersten Untergrund und einen Stein. (BILD) Als "Spielfigur" sollte ein Sprite dienen, für den wir eine Animation von Gamelab nutzten, die einen Elch darstellte. Dieser sollte natürlich auch steuerbar sein. Die Steuerung setzten wir mit "if-Klauseln" auf die Pfeiltasten. (BILD) Als erstes Feature programmierten wir, dass der Elch stirbt, sobald er herunterfällt oder die Sonne berührt. Geschieht dies erscheint eine "Todesnachricht" (Wasted) und man hört einen Sound. Außerdem verschwindet der Stein, wenn der Elch diesen berührt und der Elch wird zu einem Foto von Adriana. 
 
 ### Montag, der 03.09.2018
-Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen. Leider sind wir nicht zu dem gewünschten Ergebnis gekommen. (Screenshot)
+Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen. Leider sind wir nicht zu dem gewünschten Ergebnis gekommen. (Screenshot/GIF)
 
 ### Samstag, der 08.09.2018
-- Kamera auf Elch fixiert
-- Bewegung des Hintergrunds und des Bodens
-  - freies Springen horizontal
+Um das Spiel insgesamt flüssiger scheinen zu lassen, haben wir heute die Kamera auf den Sprite "Elch" fixiert. Dies führt dazu, dass nun der "Elch" im ständigen Mittelpunkt des Spiels befindet und sich der Hintergrund und die Böden ihm "hinterherbewegen". Dadurch haben wir das Spiel auf der horizontalen Ebene theoretisch "open end". 
   
 ### Sonntag, der 09.09.2018
-- Anpassung der Kamera
-- Fixierung des Hintergrundes auf den Elch 
-- probierte Überarbeitung des Springens
+Dadurch, dass wir am letzten Montag am Sprung erneut gescheitert sind, haben wir uns heute noch einmal an diese Thematik herangewagt, sind leider jedoch wieder "gescheitert". Trotzdem haben wir weitere Erfahrungen gesammelt im Umgang mit Gamelab, die uns hoffentlich später nützen werden.
 
 ### Montag, der 10.09.2018
 Heute haben wir es uns zur Aufgabe gemacht den vorhandenen Code zu organisieren und zu ordnen so gut es geht, um auf der einen Seite die Programmierung anschaulich und verständlich zu machen, aber auch um uns selber die spätere Arbeit zu erleichtern.
   (Vorher, Nachher Bilder????)
-Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Eine sollte als zweite Charakter neben dem Elch dienen und heißt "nini". Als Animation haben wir ein Foto von Adriana genutzt. Der Andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim und heißt auch "Tim". Letztere diente überwiegend unserem eigenen Vergnügen und sollte eine Anspielung an die "Teletubbies" sein.
+Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Eine sollte als zweite Charakter neben dem Elch dienen und heißt "nini". Als Animation haben wir vorerst ein Foto von Adriana genutzt. Der Andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim und heißt auch "Tim". Letztere diente überwiegend unserem eigenen Vergnügen und sollte eine Anspielung an die "Teletubbies" sein.
   (Bilder!!!)
 
 ### Dienstag, der 11.09.2018
-- Überarbeitung des Springens 
-- zweiter Ground 
-  - flüssigerer Übergang 
+Das Dauerthema "Sprung" hat uns auch heute wieder beschäftigt, jedoch nicht allzu sehr. Im fokus stand heute ein zweiter "ground", um das Spiel interessant zu halten. Dieser befindet sich auf der gleichen Y-Koordinate wie der erste Ground, jedoch immer auf der X-Achse 200 Einheiten weiter. Um das Prinzip "jump 'n Run" zu erhalten, haben wir beide Grounds so programmiert, dass diese sobald sie aus dem Sichtfeld des Spielers verschwinden wieder rechts neben dem anderen Block spawnen. So ist das Spiel nun auch praktisch open-end.
 
 ### Montag, der 17.09.2018
-- Option Rauszoomen für Übersicht beim Arbeiten 
+In der heutigen Stunde haben wir aus verschiedenen Gründen nicht viel geschafft. Der heute Fortschritt bestand lediglich aus einer Option für uns mit der Taste "A" aus dem Spiel herauszuzoomen, um einen besseren Überblick zu erhalten, insbesondere in der Hinsicht auf die immer wieder neu spawnenden "grounds".
 
 ### Dienstag, der 18.09.2018
+Das bisherige Konzept eomes "Jump 'n Rums
 - Konzept "Smuush"
 - Festsetzung der Kamera 
 - Festsetzen Ground 
@@ -48,6 +43,7 @@ Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Ein
 - Marcel Davis für Elch 
 
 ### Montag, der 22.10.2018
+
 - Siegerbildschirm "Marcel won, Nini won" 
 - Sprungüberarbeitung für beide 
 - Todesursachen für beide 
@@ -62,7 +58,7 @@ Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Ein
 
 
 ### Montag, der 12.11.2018
-Heute haben wir es endlich geschafft den Sprung zu optimieren. Dazu haben wir für jeden Sprung als erstes eine feste Geschwindigkeit nach oben programmiert, der jedoch eine nach unten wirkende Beschleunigung entgegen wirkt. So ist der Sprung angelehnt an die Realität und wirkt natürlich. (Bild)
+Heute haben wir es endlich geschafft den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials, die wir bis zu dem Zeitpunkt bewusst völlig außer Acht gelassen hatten. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen. Dieser hat sich leider als nicht praktisch erwiesen und zu hoch erwiesen. Deswegen beträgt er jetzt nur noch den Wert 2.
 
 ### Dienstag, der 13.11.2018
 Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs, für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt. Leider sind wir noch zu keinern
