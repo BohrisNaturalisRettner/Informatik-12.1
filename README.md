@@ -1,4 +1,4 @@
-´´e´nformatik-12.1 - Stundenprotokoll
+# "Smooosh" - Arbeitsprotokoll 
 
 
 ### Dienstag, der 21.08.2018
@@ -59,3 +59,10 @@ Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit 
 - Text "start" Konfig 
 - Arbeiten am Kräftegleichgewicht Nini und marci 
 
+### 14-19 November 2018
+- Ordnung
+- Variablen 
+- Projektil
+- ground moves
+
+### Dienstag, der 20.11.2018
