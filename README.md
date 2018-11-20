@@ -35,18 +35,10 @@ Das Dauerthema "Sprung" hat uns auch heute wieder beschäftigt, jedoch nicht all
 In der heutigen Stunde haben wir aus verschiedenen Gründen nicht viel geschafft. Der heute Fortschritt bestand lediglich aus einer Option für uns mit der Taste "A" aus dem Spiel herauszuzoomen, um einen besseren Überblick zu erhalten, insbesondere in der Hinsicht auf die immer wieder neu spawnenden "grounds".
 
 ### Dienstag, der 18.09.2018
-Das bisherige Konzept eomes "Jump 'n Rums
-- Konzept "Smuush"
-- Festsetzung der Kamera 
-- Festsetzen Ground 
-- neue Steuerung nini "wasd"
-- Marcel Davis für Elch 
+Das bisherige Konzept eines "Jump 'n Runs" ist mehr oder minder aus der Unschlüssigkeit heraus entstanden, hat uns aber nie so erfüllt wie wir es uns gewünscht haben. Deswegen waren wir auch beide sofort bereit, unser bisheriges Konzept aufzugeben und auf ein anderes umzuschwenken. Wir haben schon in den letzten Stunden herumgescherzt, man könne anstelle eines "Jump 'n Runs" sich am Spiel "Super Smash Bros." orientieren, dieses Spielprinzip übernehmen und auf eigene Weise umsetzen. Unser Spiel sollte nun, in Anlehnung an "smash", "smush" heißen. Erster Schritt dafür war die Festsetzung der Kamera, des Hintergrunds und der grounds. Nun bewegten sich der "Elch" und "nini" wieder im Vordergrund. Für "nini" haben wir die Steuerung auf die Tasten "W","A","S" und "D" gelegt. Außerdem haben wir die Animation des Elchs entfernt und stattdessen das Gesicht von Marcel Davis genutzt.  (SCREENSHOTS
 
 ### Montag, der 22.10.2018
-
-- Siegerbildschirm "Marcel won, Nini won" 
-- Sprungüberarbeitung für beide 
-- Todesursachen für beide 
+Dadurch das es jetzt immer einen Sieger und einen Verlierer geben sollte, haben wir zunächst die Todesursache im Spiel festgelegt. Sobald einer der Sprites sich auf der Y-Achse über dem Wert 360 befinden, erscheint der Siegerbildschirm für den anderen Spieler, sprich entweder "Marcel won" oder "Nini won". (SCREENSHOTS)
 
 ### Montag, der 29.10.2018
 
