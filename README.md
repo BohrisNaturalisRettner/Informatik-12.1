@@ -66,3 +66,4 @@ Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit 
 - ground moves
 
 ### Dienstag, der 20.11.2018
+- 
