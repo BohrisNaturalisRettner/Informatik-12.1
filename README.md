@@ -1,5 +1,24 @@
 # "Smooosh" - Arbeitsprotokoll 
 
+## Inhalt
+
+[Dienstag, der 21.08.2018]
+Montag, der 27.08.2018
+Dienstag, der 28.08.2018
+Sonntag, der 02.09.2018
+Montag, der 03.09.2018
+Samstag, der 08.09.2018
+Sonntag, der 09.09.2018
+Montag, der 10.09.2018
+Dienstag, der 11.09.2018
+Montag, der 17.09.2018
+Dienstag, der 18.09.2018
+Montag, der 22.10.2018
+Montag, der 29.10.2018
+Dienstag, der 30.10.2018
+Dienstag, der 06.11.2018
+Montag, der 12.11.2018
+Dienstag, der 13.11.2018
 
 ### Dienstag, der 21.08.2018
 In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Einführung und erläuterte und das Vorgehen im nächsten Schuljahr. Daraufhin hatten wir etwas Zeit uns mit seiner eigenen Seite zum Thema "Wege durch den Informatikunterricht mit Herrn Buhl" (https://github.com/jbuhl/InformatikUnterricht) zu beschäftigen. Auf dieser konnten wir uns mit einigen möglichen Programmen auseinandersetzen, was wir auch fleißig taten. Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus.
