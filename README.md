@@ -245,8 +245,11 @@ ground3.width = 100;
 
 Heute haben wir uns den Variablen gewidmet. Bei ein paar öffentlichen Projekten haben wir gesehen, dass sie eine große Rolle spielen können und viele neue Funktionen ermöglichen. Also haben wir anhand von Versuchen mit den anderen Spielen als grobe Vorlage innerhalb und außerhalb des Hauptprojekts die Funktionsweise von Variablen erarbeitet und weiter erschlossen.
 
+### Donnerstag, der 15.11.2018<a name="19"></a>
 
-### Freitag, der 16.11.2018<a name="19"></a>
+Wir haben uns weiter mit den Variablen beschäfrigt und herumexperimentiert
+
+### Freitag, der 16.11.2018<a name="20"></a>
 
 Wir hielten es, vor allem auch auf Grund der unzuverlässigen Kollisionen in Gamelab, für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben, den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich mit Hilfe des vorgestern angeeigenten Wissens über Variablen bei diesem Code:
 
@@ -292,13 +295,15 @@ function projectiles() {
 }
 ```
 
-### Samstag, der 17.11.2018<a name="20"></a>
+### Freitag, der 16.11.2018<a name="21"></a>
 
 Ein weiterer Aspekt, den wir an dem Projekt ändern mussten, um mehr Möglichkeiten zu haben, war die Einführung von weiteren Funktionen als der Function(draw). Wir haben uns daraufhin mit diesem Thema auseinandergesetzt und die Funktionsweise von Funktionen besser verstanden. Daraufhin haben wir auch für früher erstellte Abläufe Funktionen angelegt. Dies bot zum einen eine bessere Übersicht, zum anderen konnte man so viel leichter Abhängigkeiten verschiedener Abläufe festlegen.
 
 
-### Montag, der 19.11.2018<a name="21"></a>
-Die neuen Entdeckungen haben uns sehr begeistert. Nachdem wir vorher ein wenig im Projekt festgefahren waren, sind wir jetzt sehr motiviert, unser Projekt zu verbessern. Dafür haben wir mehrere Ideen, die wir bis zur Abgabe noch umsetzen wollten. Als erstes wollten wir einen Startbildschirm designen und es wie in "Smash" ermöglichen, sich vor dem Spiel seinen Charakter auszusuchen. Nach einiger Zeit haben wir aber gemerkt, dass sich die Umsetzung eines solchen Plans doch schwerer war als erwartet. Daraufhin haben wir uns dem Todesszenario zugewendet und die Umsetzung der Spielerauswahl erstmal aufgeschoben. Wir wollten eine Umsetzung der Tode, ohne dass man das Programm an sich neu starten muss. Innerhalb einer neuen function(death) haben wir unsere Vorstellungen umgesetzt. Für einen Tod und Respawn, ohne das Spiel neu zu starten, erschien uns ein sprite.visible = false als sinnvoll. Die Sprites interagieren nach Einstellung nur, wenn sie sichtbar sind. Außerdem haben wir mit einer neuen Variable einen Timer eingestellt, nachdem die Spieler wieder sichtbar sind und ein Scoreboard, das bei dem Tod eines Spielers dem Gegenspieler einen Punkt gibt. Zusätzlich erscheint noch die Nachricht Player (1/2) died beim Todesfall. Jetzt sieht unsere function(death) so aus:
+### Samstag & Sonntag, 17 & 18.11.2018<a name="22"></a>
+Die neuen Entdeckungen haben uns sehr begeistert. Nachdem wir vorher ein wenig im Projekt festgefahren waren, sind wir jetzt sehr motiviert, unser Projekt zu verbessern und haben an diesem Wochenende sehr intensiv gearbeitet. Dafür haben wir mehrere Ideen, die wir bis zur Abgabe noch umsetzen wollten. Als erstes wollten wir einen Startbildschirm designen und es wie in "Smash" ermöglichen, sich vor dem Spiel seinen Charakter auszusuchen. Nach einiger Zeit haben wir aber gemerkt, dass sich die Umsetzung eines solchen Plans doch schwerer war als erwartet. Daraufhin haben wir uns dem Todesszenario zugewendet und die Umsetzung der Spielerauswahl erstmal aufgeschoben. Wir wollten eine Umsetzung der Tode, ohne dass man das Programm an sich neu starten muss. Innerhalb einer neuen function(death) haben wir unsere Vorstellungen umgesetzt. Für einen Tod und Respawn, ohne das Spiel neu zu starten, erschien uns ein sprite.visible = false als sinnvoll. Die Sprites interagieren nach Einstellung nur, wenn sie sichtbar sind. Außerdem haben wir mit einer neuen Variable einen Timer eingestellt, nachdem die Spieler wieder sichtbar sind. Zusätzlich haben wir an einem Scoreboard gearbeitet, das bei dem Tod eines Spielers dem Gegenspieler einen Punkt gibt. Schwierig war es hierbei, zu erreiche, dass der Gegner nur einen Punkt erhält. Zusätzlich erscheint noch die Nachricht Player (1/2) died beim Todesfall. Jetzt sieht unsere function(death) so aus:
+
+
 
 function death() {
   if (nini.y >= 360) {
@@ -367,7 +372,13 @@ function death() {
   drawSprites();
 }
 
-### Dienstag, der 20.11.2018<a name="22"></a>
+
+### Montag, der 19.11.2018<a name="23"></a>
+
+Wdoppelsprung wolekn
+
+
+### Dienstag, der 20.11.2018<a name="24"></a>
 Heute haben wir zu Beginn unser Spiel erst selber gegeneinander gespielt, wobei uns ein Fehler aufgefallen ist, der bewirkte, dass sich die Spieler manchmal ohne das Drücken von Tasten auf den Plattformen bewegten und es auch sehr schwer war, gegen diese Geschwindigkeit "anzulaufen". Diesen Fehler haben wir dann mit dem einfachen Zusatz in der Movement Funktion behoben, dass, wenn keine Tasten gedrückt werden, die sprite.velocityX = 0 beträgt. 
 ```
 } else {
@@ -375,9 +386,9 @@ Heute haben wir zu Beginn unser Spiel erst selber gegeneinander gespielt, wobei 
 } else {
       nini.velocityY = nini.velocityY + 1;
 ```      
-Weiterhin haben wir ein neues Konzept erstellt. Nach sehr intensiver Inspiration (Betteln) meiner (Davids) Mutter, haben wir uns entschlossen, noch ein Flugzeug in unser Spiel einzubauen, das in regelmäßigen Abständen durch den oberen Bildschirm fliegt. Die letztendliche Umsetzung gestaltete sich zunächst aber doch etwas schwieriger, weswegen wir das Projekt auf Morgen vertagen. 
+Weiterhin haben wir ein neues Konzept erstellt. Nach sehr intensiver Inspiration meiner (Davids) Mutter, haben wir uns entschlossen, noch ein Flugzeug in unser Spiel einzubauen, das in regelmäßigen Abständen durch den oberen Bildschirm fliegt. Die letztendliche Umsetzung gestaltete sich zunächst aber doch etwas schwieriger, weswegen wir das Projekt auf Morgen vertagen. 
 
-### Mittwoch, der 21.11.2018<a name="23"></a>
+### Mittwoch, der 21.11.2018<a name="25"></a>
 Wie gestern schon erwähnt haben wir uns heute um die Verwirklichung des Traums meiner Mutter gekümmert, ein Flugzeug in das Spiel zu integrieren. Die Idee eines sinnlos umherfliegenden Flugzeuges hat uns aber nicht sehr begeistert. Nach einem Brain-storming, wie wir diese Idee sinnvoll umsetzen könnten, haben wir uns vorgenommen, ein Konzept umzusetzen, das wir schon lange im Hinterkopf hatten, das wir aber bislang als zu kompliziert empfundenden Konzept hatten. Das Flugzeug sollte an zufälligen Positionen powerups fallen lassen, die entweder dem eigenen Spieler besondere Fähigkeiten verschaffen oder den Gegner schwächen. Nach langem Herumprobieren sind wir fast an unserem Ziel angekommen. Das einzige Problem, das sich noch stellt, ist, dass das Flugzeug nicht bei Flug ein powerup fallen lässt, sondern nur bei manchen Flügen. Unsere powerups- und Flugzeugfunktionen sehen nun so aus:
 
 ```
@@ -588,7 +599,7 @@ function powerups() {
 }
 ```
 
-### Donnerstag, der 22.11.2018<a name="24"></a>#
+### Donnerstag, der 22.11.2018<a name="26"></a>#
 Das Projekt ist jetzt mit allen wichtigen Funktionen fertiggestellt. Zu guter Letzt haben wir uns dem Erstellen des Startbildschirmes und der Umsetzung der Spielerauswahlen gewidmet. Wie schon bei den powerups war hierfür viel Geduld und Probieren nötig, bis wir jetzt schlussendlich zu einem Ergebnis gekommen sind, das uns überzeugt. Auch wenn der Mausklick zum Auswählen der Spielers manchmal als Doppelklick gewertet wird und so der zweite Spieler gleich mit ausgewählt wird, funktionert es zumeist sehr zuverlässich und mit Maus sowieso bessser als mit dem Trackpad auf dem MacBook. Die Startfunktion des Spiels haben wir folgendermaßen gestaltet:
 
 
@@ -675,5 +686,5 @@ function button() {
   drawSprites();
 ```
 
-### Freitag, der 23.11.2018<a name="25"></a>
+### Freitag, der 23.11.2018<a name="27"></a>
 Heute haben wir die letzen kleinen Änderungen wie Größen- und Geschwindigkeitsanpassungen am Projekt vorgenommen und sowohl die Projektseite als auch das Arbeitsprotokoll fertiggestellt.
