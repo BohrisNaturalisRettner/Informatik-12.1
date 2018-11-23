@@ -117,22 +117,11 @@ if (elk.x - ground2.x > 400) {
 drawSprites();
 ```
 
-
-<img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
-
-
-
-<img width="320" alt="bildschirmfoto 2018-11-23 um 23 28 48" src="https://user-images.githubusercontent.com/42578460/48962234-73599000-ef7d-11e8-96ae-9e9cc0b6c97a.png">
-
-
-
-<img width="1280" alt="bildschirmfoto 2018-11-23 um 22 59 43" src="https://user-images.githubusercontent.com/42578460/48962237-7a809e00-ef7d-11e8-8e9c-93d091402c67.png">
-
-
-
 ### Montag, der 03.09.2018<a name="5"></a>
 
-Für die heutige Stunde hatten wir uns vorgenommen, den Sprung natürlicher und realistischer aussehen zu lassen, was uns jedoch trotz intensiver Bemühungen nicht gelungen ist. 
+Für die heutige Stunde hatten wir uns vorgenommen, den Sprung natürlicher und realistischer aussehen zu lassen, was uns jedoch trotz intensiver Bemühungen nicht gelungen ist. Gelungen ist uns jedoch die Programmierung eines Zerstören des Felsens, wenn man in ihn hineinspringt.
+
+<img width="320" alt="bildschirmfoto 2018-11-23 um 23 28 48" src="https://user-images.githubusercontent.com/42578460/48962234-73599000-ef7d-11e8-96ae-9e9cc0b6c97a.png">
 
 ### Samstag, der 08.09.2018<a name="6"></a>
 
@@ -158,6 +147,9 @@ Ergänzend hatten wir noch Zeit, zwei weitere Sprites zu erstellen. Der eine sol
 <img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
 
 
+<img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
+
+
 ### Dienstag, der 11.09.2018<a name="9"></a>
 
 Das Dauerthema "Sprung" hat uns auch heute wieder beschäftigt, jedoch nicht so stark, wie in den Wochen zuvor. Im Fokus stand heute ein zweiter "ground", um das Spiel interessant zu halten. Dieser befindet sich auf der gleichen Y-Koordinate wie der erste Ground, jedoch auf der X-Achse stets 200 Einheiten weiter. Um das Prinzip "jump 'n Run" zu erhalten, haben wir beide Grounds so programmiert, dass diese, sobald sie aus dem Sichtfeld des Spielers verschwunden waren, wieder rechts neben dem anderen Block spawnen. So ließ sich das Spiel nun auch praktisch open-end spielen.
@@ -169,6 +161,7 @@ Das Dauerthema "Sprung" hat uns auch heute wieder beschäftigt, jedoch nicht so 
   if (ground2.x - elk.x > 400) {
     ground2.x = elk.x - 400;
 ```
+
 
 ### Montag, der 17.09.2018<a name="10"></a>
 
