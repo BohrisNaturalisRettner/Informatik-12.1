@@ -51,6 +51,10 @@ Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die uns
 ### Dienstag, der 28.08.2018<a name="3"></a>
 
 Während unserer Arbeit auf Applab haben wir auf der Seite <a href="https://studio.code.org/projects/public">"code.org"<a/> auch Gamelab entdeckt. Gamelab ist im Gegensatz zu Applab, wie der Name schon sagt, tendenziell besser für die Programmierung eines Spiels geeignet, und zwar wegen der Möglichkeit, Sprites zu erstellen. Nun standen wir erneut vor einer Entscheidung, haben uns jedoch schnell für die Programmierung eines Spiels entschieden. Die restliche Zeit in dieser Doppelstunde nutzten wir, um uns mit Gamelab vertraut zu machen. 
+  
+  
+<img width="398" alt="bildschirmfoto 2018-11-23 um 23 29 49" src="https://user-images.githubusercontent.com/42578460/48962230-6b99eb80-ef7d-11e8-82bf-335b5633f6ad.png">
+
 
 ### Sonntag, der 02.09.2018<a name="4"></a>
 
@@ -109,9 +113,6 @@ if (elk.x - ground2.x > 400) {
 }
 drawSprites();
 ```
-
-<img width="398" alt="bildschirmfoto 2018-11-23 um 23 29 49" src="https://user-images.githubusercontent.com/42578460/48962230-6b99eb80-ef7d-11e8-82bf-335b5633f6ad.png">
-
 
 
 <img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
