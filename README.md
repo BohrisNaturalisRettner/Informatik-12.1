@@ -76,14 +76,52 @@ function draw() {
   }
   drawSprites();
 ```
-Als erstes Feature programmierten wir, dass der Elch stirbt, sobald er herunterfällt oder die Sonne berührt. Geschieht dies erscheint eine "Todesnachricht" (Wasted) und man hört einen Sound. Außerdem verschwindet der Stein, wenn der Elch diesen berührt. 
+Als erstes Feature programmierten wir, dass der Elch stirbt, sobald er herunterfällt oder die Sonne berührt. Geschieht dies erscheint eine "Todesnachricht" (Wasted) und man hört einen Sound. 
+
+```
+if (elk.x - ground2.x > 400) {
+    ground2.x = elk.x + 400;
+  }
+  if (ground2.x - elk.x > 400) {
+    ground2.x = elk.x - 400;
+  }
+  if (elk.isTouching(sun)) {
+    wasted.visible = 100;
+    playSound("sound://category_background/jazzy_beats.mp3", false);
+    stopSound("sound://category_background/repitition.mp3");
+    stopSound("sound://category_background/progression.mp3");
+    elk.setFrame(1);
+    elk.setVelocity(0, 0);
+  } else {
+    elk.setFrame(0);
+  }
+  if (elk.y > 400) {
+    elk.destroy();
+    wasted.visible = 100;
+    playSound("sound://category_background/jazzy_beats.mp3", false);
+    stopSound("sound://category_background/repitition.mp3");
+    stopSound("sound://category_background/progression.mp3");
+    
+  }
+}
+drawSprites();
+```
+
 
 ### Montag, der 03.09.2018<a name="5"></a>
-Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen. Leider sind wir nicht zu dem gewünschten Ergebnis gekommen. (Screenshot/GIF)
+Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen, da er derzeitig sehr unnatürlich aussieht. 
 
 ### Samstag, der 08.09.2018<a name="6"></a>
 Um das Spiel insgesamt flüssiger scheinen zu lassen, haben wir heute die Kamera auf den Sprite "Elch" fixiert. Dies führt dazu, dass nun der "Elch" im ständigen Mittelpunkt des Spiels befindet und sich der Hintergrund und die Böden ihm "hinterherbewegen". Dadurch haben wir das Spiel auf der horizontalen Ebene theoretisch "open end". 
-  
+
+```
+  back.x = elk.x;
+  back.y = elk.y - 69;
+  camera.x = elk.x;
+  camera.y = elk.y - 69;
+```
+
+
 ### Sonntag, der 09.09.2018<a name="7"></a>
 Dadurch, dass wir am letzten Montag am Sprung erneut gescheitert sind, haben wir uns heute noch einmal an diese Thematik herangewagt, sind leider jedoch wieder "gescheitert". Trotzdem haben wir weitere Erfahrungen gesammelt im Umgang mit Gamelab, die uns hoffentlich später nützen werden.
 
@@ -95,17 +133,32 @@ Zusätzlich dazu hatten wir noch Zeit zwei weitere Sprites zu erstellen. Der Ein
 ### Dienstag, der 11.09.2018<a name="9"></a>
 Das Dauerthema "Sprung" hat uns auch heute wieder beschäftigt, jedoch nicht allzu sehr. Im fokus stand heute ein zweiter "ground", um das Spiel interessant zu halten. Dieser befindet sich auf der gleichen Y-Koordinate wie der erste Ground, jedoch immer auf der X-Achse 200 Einheiten weiter. Um das Prinzip "jump 'n Run" zu erhalten, haben wir beide Grounds so programmiert, dass diese sobald sie aus dem Sichtfeld des Spielers verschwinden wieder rechts neben dem anderen Block spawnen. So ist das Spiel nun auch praktisch open-end.
 
+```
+ if (elk.x - ground2.x > 400) {
+    ground2.x = elk.x + 400;
+  }
+  if (ground2.x - elk.x > 400) {
+    ground2.x = elk.x - 400;
+```
+
 ### Montag, der 17.09.2018<a name="10"></a>
 In der heutigen Stunde haben wir aus verschiedenen Gründen nicht viel geschafft. Der heute Fortschritt bestand lediglich aus einer Option für uns mit der Taste "A" aus dem Spiel herauszuzoomen, um einen besseren Überblick zu erhalten, insbesondere in der Hinsicht auf die immer wieder neu spawnenden "grounds".
 
+``` 
+if (keyDown("a")) {
+    camera.zoom = 0.3;
+  } else {
+    camera.zoom = 0.5;
+```
+
 ### Dienstag, der 18.09.2018<a name="11"></a>
-Das bisherige Konzept eines "Jump 'n Runs" ist mehr oder minder aus der Unschlüssigkeit heraus entstanden, hat uns aber nie so erfüllt wie wir es uns gewünscht haben. Deswegen waren wir auch beide sofort bereit, unser bisheriges Konzept aufzugeben und auf ein anderes umzuschwenken. Wir haben schon in den letzten Stunden herumgescherzt, man könne anstelle eines "Jump 'n Runs" sich am Spiel "Super Smash Bros." orientieren, dieses Spielprinzip übernehmen und auf eigene Weise umsetzen. Unser Spiel sollte nun, in Anlehnung an "smash", "smush" heißen. Erster Schritt dafür war die Festsetzung der Kamera, des Hintergrunds und der grounds. Nun bewegten sich der "Elch" und "nini" wieder im Vordergrund. Für "nini" haben wir die Steuerung auf die Tasten "W","A","S" und "D" gelegt. Außerdem haben wir die Animation des Elchs entfernt und stattdessen das Gesicht von Marcel Davis genutzt.  (SCREENSHOTS
+Das bisherige Konzept eines "Jump 'n Runs" ist mehr oder minder aus der Unschlüssigkeit heraus entstanden, hat uns aber nie so erfüllt wie wir es uns gewünscht haben. Deswegen waren wir auch beide sofort bereit, unser bisheriges Konzept aufzugeben und auf ein anderes umzuschwenken. Wir haben schon in den letzten Stunden herumgescherzt, man könne anstelle eines "Jump 'n Runs" sich am Spiel "Super Smash Bros." orientieren, dessen Spielprinzip übernehmen und auf eigene Weise umsetzen. Unser Spiel sollte nun, in Anlehnung an "smash", "smooosh" heißen. Erster Schritt dafür war die Festsetzung der Kamera, des Hintergrunds und der grounds. Nun bewegten sich der "Elch" und "nini" wieder im Vordergrund. Für "nini" haben wir die Steuerung auf die Tasten "W","A","S" und "D" gelegt. Außerdem haben wir die Animation des Elchs entfernt und stattdessen das Gesicht von Marcel Davis genutzt. 
 
 ### Montag, der 22.10.2018<a name="12"></a>
 Dadurch das es jetzt immer einen Sieger und einen Verlierer geben sollte, haben wir zunächst die Todesursache im Spiel festgelegt. Sobald einer der Sprites sich auf der Y-Achse über dem Wert 360 befinden, erscheint der Siegerbildschirm für den anderen Spieler, sprich entweder "Marcel won" oder "Nini won". (SCREENSHOTS)
 
 ### Montag, der 29.10.2018<a name="13"></a>
-Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs, für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt, jedoch ohen ein nennenswertes Ergebnis.
+Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "Spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs, für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt, jedoch ohen ein nennenswertes Ergebnis.
 
 ### Dienstag, der 30.10.2018<a name="14"></a>
 Heute haben wir es endlich geschafft den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials, die wir bis zu dem Zeitpunkt bewusst völlig außer Acht gelassen hatten. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen. Dieser hat sich leider als nicht praktisch erwiesen und zu hoch erwiesen. Deswegen beträgt er jetzt nur noch den Wert 2.
