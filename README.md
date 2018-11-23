@@ -1,5 +1,8 @@
 # "Smooosh" - Arbeitsprotokoll 
-von David Rettmann und Tim Wähner
+von David Rettmann und Tim Wähner                                                                              
+Stormarnschule Ahrensburg                                                                         
+Klasse 12e                                                                                
+Schuljahr 18/19                                                                                                   
 
 ## Inhalt
 
