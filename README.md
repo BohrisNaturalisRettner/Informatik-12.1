@@ -21,7 +21,7 @@
 [Dienstag, der 13.11.2018](#17)                                                         
 
 ### Dienstag, der 21.08.2018<a name="1"></a>
-In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Einführung und erläuterte und das Vorgehen im nächsten Schuljahr. Daraufhin hatten wir etwas Zeit uns mit seiner eigenen Seite zum Thema "Wege durch den Informatikunterricht mit Herrn Buhl" (https://github.com/jbuhl/InformatikUnterricht) zu beschäftigen. Auf dieser konnten wir uns mit einigen möglichen Programmen auseinandersetzen, was wir auch fleißig taten. Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus.
+In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Einführung und erläuterte und das Vorgehen im nächsten Schuljahr. Daraufhin hatten wir etwas Zeit uns mit seiner eigenen Seite zum Thema <a href="https://github.com/jbuhl/InformatikUnterricht">"Wege durch den Informatikunterricht mit Herrn Buhl"<a/> zu beschäftigen. Auf dieser konnten wir uns mit einigen möglichen Programmen auseinandersetzen, was wir auch fleißig taten. Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus.
 
 ### Monatg, der 27.08.2018<a name="2"></a>
 Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die wir gestern für uns geeignet erschienen und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Die nähere Auseinandersetzung mit beiden Programmen bestand überwiegend daraus, dass wir zum  Beispiel auf Applab mit Buttons und Slidern herumprobiert haben und die generelle Funktionsweise des Programms verstehen wollten. 
