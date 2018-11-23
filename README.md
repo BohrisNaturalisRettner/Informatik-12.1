@@ -56,6 +56,9 @@ Während unserer Arbeit auf Applab haben wir auf der Seite <a href="https://stud
 <img width="398" alt="bildschirmfoto 2018-11-23 um 23 29 49" src="https://user-images.githubusercontent.com/42578460/48962230-6b99eb80-ef7d-11e8-82bf-335b5633f6ad.png">
 
 
+![bildschirmfoto 2018-11-18 um 19 38 54 3](https://user-images.githubusercontent.com/42578460/48962360-368e9880-ef7f-11e8-8cfe-a49a410aa127.jpg)
+
+
 ### Sonntag, der 02.09.2018<a name="4"></a>
 
 Auch außerhalb des Unterrichts haben wir uns mit Informatik beschäftigt. An diesem Sonntag entstand unser erstes richtiges Konzept. Das Spiel sollte ein "Jump 'n Run" werden. Wir begannen auch direkt mit der Umsetzung. Zunächst erstellten wir den Hintergrund, eine Sonne, einen ersten Untergrund und einen Stein. 
