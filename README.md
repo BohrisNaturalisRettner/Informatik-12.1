@@ -220,6 +220,9 @@ function grounds() {
   }
 }
 ```
+
+<img width="393" alt="bildschirmfoto 2018-11-23 um 23 40 01" src="https://user-images.githubusercontent.com/42578460/48962176-c4b54f80-ef7c-11e8-8a19-5a05bb78ad4e.png">
+
 In diesem Code wurde zuerst festgelegt, dass der Spieler 2 einen Charakter ausgewählt haben muss, um die anderen Aktionen ins Rollen zu bringen. Ground 2 bekommt eine Geschwindigkeit in X-Richtung und Ground 3 eine Geschwindigkeit in Y-Richtung. Sobald sie auf ihrer Route einen gewissen Punkt überschritten haben, bekommen sie eine entgegengesetzte Geschwindigkeit und machen sich auf den "Rückweg". So geht das theoretisch ewig hin und her.                                                                                  
 Im folgenden Code ist beschrieben, dass zum Beispiel Ground 1 seinen Mittelpunkt auf einem zufälligen Punkt auf der X-Achse zwischen 120 und 130 hat. Danach ist auch die Größe der PLattform vorgegeben mit 50 in der Höhe und 120 in der Breite.
 
