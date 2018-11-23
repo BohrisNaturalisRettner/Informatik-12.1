@@ -1,4 +1,5 @@
 # "Smooosh" - Arbeitsprotokoll 
+von David Rettmann und Tim Wähner
 
 ## Inhalt
 
