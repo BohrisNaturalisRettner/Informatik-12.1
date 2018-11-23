@@ -368,14 +368,6 @@ function death() {
   drawSprites();
 }
 
-
-### 14-19 November 2018
-
-
-- Startmenü
-- Flugzeug 
-- Powerup
-
 ### Dienstag, der 20.11.2018<a name="22"></a>
 Heute haben wir zu Anfang unser Spiel erst selber gegeneinander gespielt, wobei uns ein Fehler aufgefallen ist, der bewirkte, dass sich die Spieler manchmal ohne das Drücken von Tasten auf den Plattformen bewegten und es auch sehr schwer war, gegen diese Geschwindigkeit "anzulaufen". Diesen Fehler haben wir dann mit dem einfachen Zusatz in der Movement Funktion behoben, dass wenn keine Tasten gedrückt werde, die sprite.velocityX = 0 beträgt. 
 ```
