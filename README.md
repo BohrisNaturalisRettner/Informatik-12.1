@@ -43,7 +43,7 @@ Schuljahr 18/19
 
 In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Einführung und erläuterte das Vorgehen im nächsten Schuljahr. Daraufhin hatten wir etwas Zeit uns mit seiner eigenen Seite zum Thema <a href="https://github.com/jbuhl/InformatikUnterricht">"Wege durch den Informatikunterricht mit Herrn Buhl"<a/> zu beschäftigen. Auf dieser konnten wir uns mit einigen möglichen Programmen auseinandersetzen, was wir auch fleißig taten. Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus.
 
-### Monatg, der 27.08.2018<a name="2"></a>
+### Montag, der 27.08.2018<a name="2"></a>
 
 Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die gestern für uns geeignet erschienen und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Bei Applab gefiel uns zum einen die Art und Weise mit der man Buttons und Slider einfügen und verwenden konnte und zum anderen die Vielzahl an Möglichkeiten die verschiedenen Screens zu gestalten. Mit den Buttons haben wir auch schon erste kleine Funktionen verbunden, wie zum Beispiel die "Turtle" auf dem Screen herumzubewegen.
 
@@ -114,7 +114,7 @@ drawSprites();
 
 ### Montag, der 03.09.2018<a name="5"></a>
 
-Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen, da er derzeitig sehr unnatürlich aussieht. 
+In der heutigen Stunde haben wir uns eigentlich vorgenommen den Sprung natürlicher und realistischer aussehen zu lassen, jedoch ist es uns trotz unserer Bemühungen nicht gelungen. 
 
 ### Samstag, der 08.09.2018<a name="6"></a>
 
@@ -193,23 +193,104 @@ if (keyDown("down")) {
 
 ### Dienstag, der 06.11.2018<a name="15"></a>
 
-
+Die heutige Doppelstunde haben wir einzig und allein Github gewidmet. Zum einen mussten wir unserer Arbeitsprotokoll bearbeiten und in Reinform bringen und zum anderen an der Projektseite arbeiten, um am Ende der Zeit nicht in Stress zu verfallen. 
 
 ### Montag, der 12.11.2018<a name="16"></a>
 
-
+Die Ordnung ist erneut ein Thema, das unserer Aufmerksamkeit bedarf. Nach vielen Veränderungen, die wir auch zum Teil spontan an verschiedenen Stellen des Codes vorgenommen haben, ist es mal wieder Zeit uns selber die Arbeit zu erleichtern und die Commands zu sortieren. Wie schon bereits am [Montag, dem 10.09.2018](#8) galt es ähnliche Commands zusammenzuordnen. 
 
 ### Dienstag, der 13.11.2018<a name="17"></a>
 
- 
+Im Sinne unseres neuen Konzepts haben wir heute auch eine dritte Plattform programmiert. Diese und die zweite Plattform sollen sich auch bewegen und in gewissem Maße an zufälligen Orten spawnen. 
+
+function grounds() {
+  if (mouseDown("leftButton")&&(player2.visible===true||ground.visible===true)) {
+    ground2.velocityX = -0.5;
+    ground3.velocityY = -0.5;
+  }
+  if ((ground2.x==50 && ground2.velocityX < 0)) {
+    ground2.velocityX = 0.5;
+  }
+  if ((ground3.y)<=200 && ground3.velocityY < 0) {
+    ground3.velocityY = 0.5;
+  }
+  if ((ground2.x==200 && ground2.velocityX > 0)) {
+     ground2.velocityX = -0.5;
+  }
+  if (ground3.y>=350 && ground3.velocityY > 0) {
+    ground3.velocityY = -0.5;
+  }
+}
+
+In diesem Code wurde zuerst festgelegt, dass der Spieler 2 einen Charakter ausgewählt haben muss, um die anderen Aktionen ins Rollen zu bringen. Ground 2 bekommt eine Geschwindigkeit in X-Richtung und Ground 3 eine Geschwindigkeit in Y-Richtung. Sobald sie auf ihrer Route einen gewissen Punkt überschritten haben bekommen sie eine entgegengesetzte Geschwindigkeit und machen sich auf den "Rückweg". So geht das theoretisch ewig hin und her.                                                                                  
+Im folgenden Code ist beschrieben, dass zum Beispiel Ground 1 seinen Mittelpunkt auf einem zufälligen Punkt auf der X-Achse zwischen 120 und 130 hat. Danach ist auch die Größe der PLattform vorgegeben mit 50 in der Höhe und 120 in der Breite.
+
+```
+//ground1
+var ground = createSprite(randomNumber(120, 130), 350);
+ground.setAnimation("Wolke");
+ground.height = 50;
+ground.width = 120;
+//ground2
+var ground2 = (createSprite(randomNumber(100, 200), 200));
+ground2.setAnimation("Wolke");
+ground2.scale = 0.3;
+//ground3
+var ground3 = createSprite(ground.x+170, ground.y-randomNumber(30,70));
+ground3.setAnimation("Wolke");
+ground3.height = 30;
+ground3.width = 100;
+```
  
 ### Mittwoch, der 14.11.2018<a name="18"></a>
 
-
+heute
 
 ### Freitag, der 16.11.2018<a name="19"></a>
 
+Wir hielten es für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich bei diesem Code:
 
+```
+function projectiles() {
+  if (keyWentDown("q")&&q>50&&nini.visible===true) {
+          projectile1.x = nini.x;
+          projectile1.y = nini.y;
+          projectile1.visible = true;
+          projectile1.velocityX = -7;
+          q = 0;
+    } else if ((keyWentDown("e")&&e>50&&nini.visible===true)) {
+        projectile2.x = nini.x;
+        projectile2.y = nini.y;
+        projectile2.visible = true;
+        projectile2.velocityX = 7;
+        e = 0;
+    } else if (keyWentDown("alt")&&alt>50&&elk.visible===true) {
+        projectile3.x = elk.x;
+        projectile3.y = elk.y;
+        projectile3.visible = true;
+        projectile3.velocityX = -7;
+        alt = 0;
+    } else if (keyWentDown("shift")&&shift>50&&elk.visible===true) {
+        projectile4.x = elk.x;
+        projectile4.y = elk.y;
+        projectile4.visible = true;
+        projectile4.velocityX = 7;
+        shift = 0;
+     }
+  if (projectile1.isTouching(edges)) {
+    projectile1.visible = false;
+  }
+  if (projectile2.isTouching(edges)) {
+    projectile2.visible = false;
+  }
+  if (projectile3.isTouching(edges)) {
+    projectile3.visible = false;
+  }
+  if (projectile4.isTouching(edges)) {
+    projectile4.visible = false;
+  }
+}
+```
 
 ### Samstag, der 17.11.2018<a name="20"></a>
 
@@ -221,9 +302,15 @@ if (keyDown("down")) {
 
 ### 14-19 November 2018
 - Ordnung
+- ground moves
 - Variablen 
 - Projektil
-- ground moves
+- Scoreboard
+- Respawn
+- Startmenü
+- Anpassung des Wegrutschens 
+- Flugzeug 
+- Powerup
 
 ### Dienstag, der 20.11.2018<a name="22"></a>
 
