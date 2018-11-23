@@ -47,45 +47,6 @@ In der ersten Doppelstunde Informatik nach den Sommerferien gab Herr Buhl uns zu
 
 Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die uns nach unseren bisherigen Erfahrungen als geeignet erschienen und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Bei Applab gefiel uns zum einen die Art und Weise, mit der man Buttons und Slider einfügen und verwenden konnte und zum anderen die Vielzahl an Möglichkeiten, die verschiedenen Screens zu gestalten. Mit den Buttons haben wir auch schon erste kleine Funktionen verbunden, wie zum Beispiel die "Turtle" auf dem Screen herumzubewegen.
 
-<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/turtle%20beispiel%20protokoll.png" alt="image" width="500"> 
-
-<img scr="Bildschirmfoto 2018-11-23 um 22.59.43.png" alt="image" width="500">
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.28.48.png" alt="image" width="500">
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.29.49.png" alt="image" width="500">
-
-
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.31.27.png" alt="image" width="500">
-
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.36.13.png" alt="image" width="500">
-
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.37.29.png" alt="image" width="500">
-
-
-
-
-
-
-<img scr="Bildschirmfoto 2018-11-23 um 23.40.01.png" alt="image" width="500">
 
 ### Dienstag, der 28.08.2018<a name="3"></a>
 
