@@ -49,6 +49,44 @@ Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die uns
 
 <img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/turtle%20beispiel%20protokoll.png" alt="image" width="500"> 
 
+<img scr="Bildschirmfoto 2018-11-23 um 22.59.43.png" alt="image" width="500">
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.28.48.png" alt="image" width="500">
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.29.49.png" alt="image" width="500">
+
+
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.31.27.png" alt="image" width="500">
+
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.36.13.png" alt="image" width="500">
+
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.37.29.png" alt="image" width="500">
+
+
+
+
+
+
+<img scr="Bildschirmfoto 2018-11-23 um 23.40.01.png" alt="image" width="500">
+
 ### Dienstag, der 28.08.2018<a name="3"></a>
 
 Während unserer Arbeit auf Applab haben wir auf der Seite <a href="https://studio.code.org/projects/public">"code.org"<a/> auch Gamelab entdeckt. Gamelab ist im Gegensatz zu Applab, wie der Name schon sagt, tendenziell besser für die Programmierung eines Spiels geeignet, und zwar wegen der Möglichkeit, Sprites zu erstellen. Nun standen wir erneut vor einer Entscheidung, haben uns jedoch schnell für die Programmierung eines Spiels entschieden. Die restliche Zeit in dieser Doppelstunde nutzten wir, um uns mit Gamelab vertraut zu machen. 
