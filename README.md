@@ -110,11 +110,6 @@ if (elk.x - ground2.x > 400) {
 drawSprites();
 ```
 
-
-<img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
-
-
-
 <img width="398" alt="bildschirmfoto 2018-11-23 um 23 29 49" src="https://user-images.githubusercontent.com/42578460/48962230-6b99eb80-ef7d-11e8-82bf-335b5633f6ad.png">
 
 
@@ -155,6 +150,9 @@ Weil wir am letzten Montag am Sprung erneut gescheitert waren, haben wir uns heu
 
 Heute haben wir es uns zur Aufgabe gemacht, den vorhandenen Code, so gut es geht, zu organisieren und zu ordnen, um auf der einen Seite die Programmierung anschaulich und verständlich zu machen, aber auch, um uns selbst die spätere Arbeit zu erleichtern.
 Ergänzend hatten wir noch Zeit, zwei weitere Sprites zu erstellen. Der eine sollte als zweiter Charakter neben dem Elch dienen - wir haben ihn "nini" getauft. Als Animation haben wir vorerst ein Foto von Adriana genutzt. Der andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim, weshalb wir ihn auch "Tim" genannt haben. 
+
+<img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
+
 
 ### Dienstag, der 11.09.2018<a name="9"></a>
 
