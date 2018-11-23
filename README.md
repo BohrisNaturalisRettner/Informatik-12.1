@@ -135,7 +135,6 @@ Weil wir am letzten Montag am Sprung erneut gescheitert waren, haben wir uns heu
 ### Montag, der 10.09.2018<a name="8"></a>
 
 Heute haben wir es uns zur Aufgabe gemacht, den vorhandenen Code, so gut es geht, zu organisieren und zu ordnen, um auf der einen Seite die Programmierung anschaulich und verständlich zu machen, aber auch, um uns selbst die spätere Arbeit zu erleichtern.
-  (Vorher, Nachher Bilder????)
 Ergänzend hatten wir noch Zeit, zwei weitere Sprites zu erstellen. Der eine sollte als zweiter Charakter neben dem Elch dienen - wir haben ihn "nini" getauft. Als Animation haben wir vorerst ein Foto von Adriana genutzt. Der andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim, weshalb wir ihn auch "Tim" genannt haben. 
 
 ### Dienstag, der 11.09.2018<a name="9"></a>
@@ -171,11 +170,11 @@ Weil es nach unserer neuen Spielidee immer einen Sieger und einen Verlierer gebe
 
 ### Montag, der 29.10.2018<a name="13"></a>
 
-Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "Spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt, jedoch ohen ein nennenswertes Ergebnis.
+Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "Spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt, jedoch ohne ein nennenswertes Ergebnis.
 
 ### Dienstag, der 30.10.2018<a name="14"></a>
 
-Heute haben wir es endlich geschafft, den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials, die wir bis zu dem Zeitpunkt bewusst völlig außer Acht gelassen hatten. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen, welcher sich jedoch als eindeutig zu hoch erwiesen hat. Deswegen beträgt der Wert jetzt nur noch eins. 
+Heute haben wir es endlich geschafft, den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen, welcher sich jedoch als eindeutig zu hoch erwiesen hat. Deswegen beträgt der Wert jetzt nur noch eins. 
 
 ```
 } if (keyWentDown("up")) {
