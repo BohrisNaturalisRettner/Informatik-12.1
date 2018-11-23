@@ -371,7 +371,7 @@ function death() {
   }
   drawSprites();
 }
-
+ 
 
 ### Montag, der 19.11.2018<a name="23"></a>
 
