@@ -295,7 +295,7 @@ function projectiles() {
 
 ### Samstag, der 17.11.2018<a name="20"></a>
 
-Ein weiterer Aspekt den wir an dem Projekt ändern mussten, um mehr Möglichkeiten zu haben, war die Einführung von weiteren Funktionen als der Function(draw). Wir haben uns daraufhin mit diesem Thema auseinandergesetzt und die Funktionsweise von Funktionen besser verstanden. Daraufhin haben wir auch für früher erstellte Abläufe Funktionen angelegt. Dies bot zum einen eine bessere Übersicht, zum anderen konnte man so viel leichter Abhängigkeiten verschiedener Abläufe festlegen.
+Ein weiterer Aspekt, den wir an dem Projekt ändern mussten, um mehr Möglichkeiten zu haben, war die Einführung von weiteren Funktionen als der Function(draw). Wir haben uns daraufhin mit diesem Thema auseinandergesetzt und die Funktionsweise von Funktionen besser verstanden. Daraufhin haben wir auch für früher erstellte Abläufe Funktionen angelegt. Dies bot zum einen eine bessere Übersicht, zum anderen konnte man so viel leichter Abhängigkeiten verschiedener Abläufe festlegen.
 
 
 ### Montag, der 19.11.2018<a name="21"></a>
