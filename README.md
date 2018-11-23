@@ -45,7 +45,7 @@ In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Ei
 ### Monatg, der 27.08.2018<a name="2"></a>
 Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die gestern für uns geeignet erschienen und sind gemeinsam zu dem Schluss gekommen, dass wir lieber mit Applab als mit Greenfoot arbeiten würden. Bei Applab gefiel uns zum einen die Art und Weise mit der man Buttons und Slider einfügen und verwenden konnte und zum anderen die Vielzahl an Möglichkeiten die verschiedenen Screens zu gestalten. Mit den Buttons haben wir auch schon erste kleine Funktionen verbunden, wie zum Beispiel die "Turtle" auf dem Screen herumzubewegen.
 
-<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/turtle%20beispiel%20protokoll.png" alt="image" width="1500"> 
+<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/turtle%20beispiel%20protokoll.png" alt="image" width="1000"> 
 
 ### Dienstag, der 28.08.2018<a name="3"></a>
 Während unserer Arbeit auf Applab, haben wir auf der seite <a href="https://studio.code.org/projects/public">"code.org"<a/> auch Gamelab entdeckt. Gamelab ist im Gegensatz zu Applab, wie der Name schon sagt, tendenziell besser für die Programmierung eines Spiels geeignet, durch die mögliche Erstellung von Sprites. Nun standen wir erneut vor einer Entscheidung, haben uns jedoch schnell für die Programmierung eines Spiels entschieden.
