@@ -381,6 +381,7 @@ Weiterhin haben wir ein neues Konzept erstellt. Nach sehr intensiver Inspiration
 ### Mittwoch, der 21.11.2018<a name="23"></a>
 Wie gestern schon erwähnt haben wir uns heute um die Verwirklichung des Traums meiner Mutter gekümmert, ein Flugzeug in das Spiel zu integrieren. Die Idee eines sinnlos umherfliegenden Flugzeuges hat uns aber nicht sehr begeistert. Nach einem Brain-storming nach möglichen Ideen für eine sinnvolle Nutzung sind wir zu dem Schluss gekommen ein schon lange im Hinterkopf gehabtes aber voher als zu schwer empfundendes Konzept umzusetzen. Das Flugzeug sollte an zufälligen Positionen powerups fallen lassen, die den Spielern besondere Fähigkeiten geben, oder den Gegner schwächen. Nach langem Herumprobieren sind wir fast an unserem Ziel angekommen. Das einzige Problem, das sich noch stellt, ist, dass das Flugzeug nicht bei Flug ein powerup fallen lässt sondern nur bei zufälligen Flügen. Unsere powerups- und Flugzeugfunktionen sehen nun so aus:
 
+```
 function powerups() {
   if (flugzeug.x==abwurf) {
     pup2 = randomNumber(1, 6 );
@@ -586,11 +587,13 @@ function powerups() {
     drawSprites();
   }
 }
-
+```
 
 ### Donnerstag, der 22.11.2018<a name="24"></a>#
 Das Projekt ist jetzt mit allen wichtigen Funktionen fertiggestellt. Zu guter letzt haben wir uns dem Erstellen des Startbildschirmes und der Umsetzung der Spielerauswahlen gewidmet. Wie schon bei den powerups, war viel Geduld und Probieren möglich, bis wir jetzt schlussendlich zu einem Ergebnis gekommen sind, das uns überzeugt. Auch wenn der Mausklick zum Auswählen der Spielers manchmal als Doppelklick gewertet wird und so der zweite Spieler gleich mit ausgewählt wird, funktionert es zumeist sehr zuverlässich und mit Maus sowieso bessser als mit dem Trackpad auf dem MacBook. Die Startfunktion des Spiels haben wir folgendermaßen gestaltet:
 
+
+```
 function button() {
   if (player1.visible===true) {
     playerselect11.visible = true;
@@ -671,8 +674,7 @@ function button() {
   nini.y = start1.y-5;
   }
   drawSprites();
-}
-
+```
 
 ### Freitag, der 23.11.2018<a name="25"></a>
 Heute haben wir die letzen kleinen Änderungen wie Größen- und Geschwindigkeitsanpassungen am Projekt vorgenommen und sowohl die Projektseite als auch das Arbeitsprotokoll fertiggestellt.
