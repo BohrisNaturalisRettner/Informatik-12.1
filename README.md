@@ -110,6 +110,29 @@ if (elk.x - ground2.x > 400) {
 drawSprites();
 ```
 
+<img width="392" alt="bildschirmfoto 2018-11-23 um 23 37 29" src="https://user-images.githubusercontent.com/42578460/48962222-502ee080-ef7d-11e8-883d-df2c811bbedc.png">
+
+
+
+<img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
+
+
+
+<img width="398" alt="bildschirmfoto 2018-11-23 um 23 29 49" src="https://user-images.githubusercontent.com/42578460/48962230-6b99eb80-ef7d-11e8-82bf-335b5633f6ad.png">
+
+
+
+<img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
+
+
+
+<img width="320" alt="bildschirmfoto 2018-11-23 um 23 28 48" src="https://user-images.githubusercontent.com/42578460/48962234-73599000-ef7d-11e8-96ae-9e9cc0b6c97a.png">
+
+
+
+<img width="1280" alt="bildschirmfoto 2018-11-23 um 22 59 43" src="https://user-images.githubusercontent.com/42578460/48962237-7a809e00-ef7d-11e8-8e9c-93d091402c67.png">
+
+
 
 ### Montag, der 03.09.2018<a name="5"></a>
 
