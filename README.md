@@ -63,7 +63,9 @@ Während unserer Arbeit auf Applab haben wir auf der Seite <a href="https://stud
 
 Auch außerhalb des Unterrichts haben wir uns mit Informatik beschäftigt. An diesem Sonntag entstand unser erstes richtiges Konzept. Das Spiel sollte ein "Jump 'n Run" werden. Wir begannen auch direkt mit der Umsetzung. Zunächst erstellten wir den Hintergrund, eine Sonne, einen ersten Untergrund und einen Stein. 
 
-<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/Screenshot%20(34).png" alt="image" width="500"> 
+
+<img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
+
 
 Als "Spielfigur" sollte ein Sprite dienen, für den wir eine Animation von Gamelab nutzten, die einen Elch darstellte. Dieser sollte natürlich auch steuerbar sein. Die Steuerung setzten wir mit "if-Klauseln" auf die Pfeiltasten. 
 
@@ -121,7 +123,7 @@ drawSprites();
 
 Für die heutige Stunde hatten wir uns vorgenommen, den Sprung natürlicher und realistischer aussehen zu lassen, was uns jedoch trotz intensiver Bemühungen nicht gelungen ist. Gelungen ist uns jedoch die Programmierung eines Zerstören des Felsens, wenn man in ihn hineinspringt.
 
-<img width="320" alt="bildschirmfoto 2018-11-23 um 23 28 48" src="https://user-images.githubusercontent.com/42578460/48962234-73599000-ef7d-11e8-96ae-9e9cc0b6c97a.png">
+
 
 ### Samstag, der 08.09.2018<a name="6"></a>
 
@@ -134,6 +136,7 @@ Um das Spiel insgesamt flüssiger scheinen zu lassen, haben wir heute die Kamera
   camera.y = elk.y - 69;
 ```
 
+<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/Screenshot%20(34).png" alt="image" width="500"> 
 
 ### Sonntag, der 09.09.2018<a name="7"></a>
 
@@ -145,9 +148,6 @@ Heute haben wir es uns zur Aufgabe gemacht, den vorhandenen Code, so gut es geht
 Ergänzend hatten wir noch Zeit, zwei weitere Sprites zu erstellen. Der eine sollte als zweiter Charakter neben dem Elch dienen - wir haben ihn "nini" getauft. Als Animation haben wir vorerst ein Foto von Adriana genutzt. Der andere wurde über die Sonne gesetzt und bestand aus einem Foto von Tim, weshalb wir ihn auch "Tim" genannt haben. 
 
 <img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
-
-
-<img width="315" alt="bildschirmfoto 2018-11-23 um 23 27 56" src="https://user-images.githubusercontent.com/42578460/48962233-6fc60900-ef7d-11e8-90aa-4bd13e08bcea.png">
 
 
 ### Dienstag, der 11.09.2018<a name="9"></a>
