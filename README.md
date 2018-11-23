@@ -110,9 +110,6 @@ if (elk.x - ground2.x > 400) {
 drawSprites();
 ```
 
-<img width="392" alt="bildschirmfoto 2018-11-23 um 23 37 29" src="https://user-images.githubusercontent.com/42578460/48962222-502ee080-ef7d-11e8-883d-df2c811bbedc.png">
-
-
 
 <img width="393" alt="bildschirmfoto 2018-11-23 um 23 36 13" src="https://user-images.githubusercontent.com/42578460/48962225-591fb200-ef7d-11e8-9f6e-5d26dd61bc4a.png">
 
@@ -218,7 +215,11 @@ Die heutige Doppelstunde haben wir einzig und allein Github gewidmet. Zum einen 
 
 ### Montag, der 12.11.2018<a name="16"></a>
 
-Die Ordnung ist erneut ein Thema, das unserer Aufmerksamkeit bedarf. Nach vielen Veränderungen, die wir auch zum Teil spontan an verschiedenen Stellen des Codes vorgenommen haben, ist es mal wieder Zeit, uns selber die Arbeit zu erleichtern und die Commands zu sortieren. Wie schon bereits am [Montag, dem 10.09.2018](#8) galt es, ähnliche Commands zusammenzuordnen. 
+Die Ordnung ist erneut ein Thema, das unserer Aufmerksamkeit bedarf. Nach vielen Veränderungen, die wir auch zum Teil spontan an verschiedenen Stellen des Codes vorgenommen haben, ist es mal wieder Zeit, uns selber die Arbeit zu erleichtern und die Commands zu sortieren. Wie schon bereits am [Montag, dem 10.09.2018](#8) galt es, ähnliche Commands zusammenzuordnen. Zusätzlich haben wir einen ersten Startbildschirm für das Spiel entwickelt, indem erst alle anderen Sprites unsichtbar sind und man nur die anfängliche Schrift sieht. Wenn man Leertaste drückt, erscheinen die Sprites und das Spiel kann beginnen.
+
+
+<img width="392" alt="bildschirmfoto 2018-11-23 um 23 37 29" src="https://user-images.githubusercontent.com/42578460/48962222-502ee080-ef7d-11e8-883d-df2c811bbedc.png">
+
 
 ### Dienstag, der 13.11.2018<a name="17"></a>
 
