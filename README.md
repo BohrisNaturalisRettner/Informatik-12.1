@@ -299,8 +299,7 @@ Ein weiterer Aspekt den wir an dem Projekt ändern mussten, um mehr Möglichkeit
 
 
 ### Montag, der 19.11.2018<a name="21"></a>
-Die neuen Entdeckungen haben uns sehr begeistert. Nachdem wir vorher ein wenig im Projekt festgefahren waren hat sind wir jetzt sehr motiviert unser Projekt zu verbessern. Dafür haben wir mehrere Ideen die wir bis zur Abgabe noch umsetzen wollten. Als erstes wollten wir einen Startbildschirm designen und es wie in "Smash" ermöglichen, sich vor dem Spiel seinen Charakter auszusuchen. Nach einiger Zeit haben wir aber gemerkt, dass sich die Umsetzung eines solchen Plans doch schwerer war als erwartet. Daraufhin haben wir uns dem Todesszenario zugewendet und die Umsetzung der Spielerauswahl erstmal aufgeschoben. Wir wollten eine Umsetzung der Tode, ohne, dass man das Programm an sich neu starten muss. Innerhalb einer neuen function(death) haben wir unsere Vorstellungen umgesetzt. 
-
+Die neuen Entdeckungen haben uns sehr begeistert. Nachdem wir vorher ein wenig im Projekt festgefahren waren hat sind wir jetzt sehr motiviert unser Projekt zu verbessern. Dafür haben wir mehrere Ideen die wir bis zur Abgabe noch umsetzen wollten. Als erstes wollten wir einen Startbildschirm designen und es wie in "Smash" ermöglichen, sich vor dem Spiel seinen Charakter auszusuchen. Nach einiger Zeit haben wir aber gemerkt, dass sich die Umsetzung eines solchen Plans doch schwerer war als erwartet. Daraufhin haben wir uns dem Todesszenario zugewendet und die Umsetzung der Spielerauswahl erstmal aufgeschoben. Wir wollten eine Umsetzung der Tode, ohne, dass man das Programm an sich neu starten muss. Innerhalb einer neuen function(death) haben wir unsere Vorstellungen umgesetzt. Für einen Tod und Respawn ohne das Spiel neu zu starten erschien uns ein sprite.visible = false als sinnvoll. Die Sprites interagieren nach Einstellung nur wenn sie sichtbar sind. Außerdem haben wir mit einer neuen Variable einen Timer eingestellt nachdem die Spieler wieder sichtbar sind und ein Scoreboard, das bei dem Tod eines Spielers dem Gegenspieler einen Punkt gibt. Zusätzlich erscheint noch die Nachricht Player (1/2) died beim Todesfall. Jetzt sieht unsere function(death) so aus:
 
 function death() {
   if (nini.y >= 360) {
@@ -371,24 +370,317 @@ function death() {
 
 
 ### 14-19 November 2018
-- Scoreboard
-- Respawn
+
+
 - Startmenü
-- Anpassung des Wegrutschens 
 - Flugzeug 
 - Powerup
 
 ### Dienstag, der 20.11.2018<a name="22"></a>
+Heute haben wir zu Anfang unser Spiel erst selber gegeneinander gespielt, wobei uns ein Fehler aufgefallen ist, der bewirkte, dass sich die Spieler manchmal ohne das Drücken von Tasten auf den Plattformen bewegten und es auch sehr schwer war, gegen diese Geschwindigkeit "anzulaufen". Diesen Fehler haben wir dann mit dem einfachen Zusatz in der Movement Funktion behoben, dass wenn keine Tasten gedrückt werde, die sprite.velocityX = 0 beträgt. 
+```
+} else {
+      elk.velocityY = elk.velocityY + 1;
+} else {
+      nini.velocityY = nini.velocityY + 1;
+```      
+Weiterhin haben wir ein neues Konzept erstellt. Nach sehr intensiver Inspiration (Betteln) meiner (Davids) Mutter, haben wir uns entschlossen noch ein Flugzeug in unser Spiel einzubauen, das in regelmäßigen Abständen durch den oberen Bildschirm fliegt. Die letztendliche Umsetung gestaltete sich zunächst aber doch etwas schwerer, weswegen wir das Projekt auf Morgen vertagen. 
 
-
--
 ### Mittwoch, der 21.11.2018<a name="23"></a>
+Wie gestern schon erwähnt haben wir uns heute um die Verwirklichung des Traums meiner Mutter gekümmert, ein Flugzeug in das Spiel zu integrieren. Die Idee eines sinnlos umherfliegenden Flugzeuges hat uns aber nicht sehr begeistert. Nach einem Brain-storming nach möglichen Ideen für eine sinnvolle Nutzung sind wir zu dem Schluss gekommen ein schon lange im Hinterkopf gehabtes aber voher als zu schwer empfundendes Konzept umzusetzen. Das Flugzeug sollte an zufälligen Positionen powerups fallen lassen, die den Spielern besondere Fähigkeiten geben, oder den Gegner schwächen. Nach langem Herumprobieren sind wir fast an unserem Ziel angekommen. Das einzige Problem, das sich noch stellt, ist, dass das Flugzeug nicht bei Flug ein powerup fallen lässt sondern nur bei zufälligen Flügen. Unsere powerups- und Flugzeugfunktionen sehen nun so aus:
 
+function powerups() {
+  if (flugzeug.x==abwurf) {
+    pup2 = randomNumber(1, 6 );
+    powerup.visible = true;
+    powerup.x = flugzeug.x;
+    powerup.y = flugzeug.y;
+    powerup.velocityY = 1.5;
+  }
+  if (pup2===1) {
+    powerup.setAnimation("powerupRed_bolt_1");
+    if ((elk.isTouching(powerup)) && (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3e=1;
+    }
+    if ((0<pup3e) && (pup3e<150) && (powerup.visible===false)) {
+      nini.velocityY = nini.velocityY+10;
+      pup3e = pup3e+1;
+    }
+    if (pup3e===150) {
+      pup3e = 0;
+      pup2 = 0;
+    }
+    if ((nini.isTouching(powerup)) &&(powerup.visible===true)) {
+      powerup.visible = false;
+      pup3n = 1;
+    }
+    if ((0<pup3n) && (pup3n<150) && (powerup.visible===false)) {
+      elk.velocityY = elk.velocityY+10;
+      pup3n = pup3n+1;
+    }
+    if (pup3n===150) {
+      pup3n = 0;
+    }
+  }
+  if (pup2===2) {
+    powerup.setAnimation("powerupGreen_bolt_1");
+    if (elk.isTouching(powerup) && (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3e=1;
+    }
+    if ((0<pup3e) && (pup3e<150) && (powerup.visible===false)) {
+      up = 0;
+      pup3e = pup3e+1;
+    }
+    if (pup3e===150) {
+      pup3e = 0;
+      pup2 = 0;
+    }
+    if (nini.isTouching(powerup) && (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3n = 1;
+    }
+    if ((0<pup3n) && (pup3n<150) && (powerup.visible===false)) {
+      w = 0;
+      pup3n = pup3n+1;
+    }
+    if (pup3n===150) {
+      pup3n = 0;
+    }
+  }
+  if (pup2===3) {
+    powerup.setAnimation("powerupRed_shield_1");
+    if (elk.isTouching(powerup) && (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3e=1;
+    }
+    if ((0<pup3e) && (pup3e<150) && (powerup.visible===false)) {
+      q = 0;
+      e = 0;
+      pup3e = pup3e+1;
+    }
+    if (pup3e===150) {
+      pup3e = 0;
+      pup2 = 0;
+    }
+    if (nini.isTouching(powerup)&& (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3n = 1;
+    }
+    if ((0<pup3n) && (pup3n<150) && (powerup.visible===false)) {
+      alt = 0;
+      shift = 0;
+      pup3n = pup3n+1;
+    }
+    if (pup3n===150) {
+      pup3n = 0;
+    }
+  }
+  if (pup2===4) {
+    powerup.setAnimation("powerupGreen_shield_1");
+    if (elk.isTouching(powerup)&& (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3e=1;
+    }
+    if ((0<pup3e) && (pup3e<150) && (powerup.visible===false)) {
+      projectile3.velocityX = -30;
+      projectile4.velocityX = 30;
+      if (projectile3.isTouching(nini)||projectile4.isTouching(nini)){
+      nini.x = 300;
+      nini.y = 380;
+      }
+      alt = 100;
+      shift = 100;
+      pup3e = pup3e+1;
+    }
+    if (pup3e===150) {
+      pup3e = 0;
+      pup2 = 0;
+    }
+    if (nini.isTouching(powerup)&& (powerup.visible===true)) {
+      powerup.visible = false;
+      pup3n = 1;
+    }
+    if ((0<pup3n) && (pup3n<150) && (powerup.visible===false)) {
+      projectile1.velocityX = -30;
+      projectile2.velocityX = 30;
+      if (projectile1.isTouching(elk)||projectile1.isTouching(elk)){
+      elk.x = 250;
+      elk.y = 380;
+      }
+      q = 100;
+      e = 100;
+      pup3n = pup3n+1;
+    }
+    if (pup3n===150) {
+      pup3n = 0;
+    }
+  }
+  if (pup2===5) {
+    powerup.setAnimation("powerupRed_star_1");
+    if (elk.isTouching(powerup)&& (powerup.visible===true)) {
+        powerup.visible = false;
+        pup3e=1;
+      }
+    if (0<pup3e && pup3e<150 && powerup.visible===false) {
+        pup3e = pup3e+1;
+        nini.scale = 0.05;
+      } else {
+      nini.scale = 0.15;
+    }
+    if (pup3e===149) {
+        pup3e = 0;
+        pup2 = 0;
+      }
+    if (nini.isTouching(powerup)&& (powerup.visible===true)) {
+        powerup.visible = false;
+        pup3n = 1;
+      }
+    if (0<pup3n && pup3n<150 && powerup.visible===false) {
+        pup3n = pup3n+1;
+        elk.scale = 0.05;
+      } else {
+      elk.scale = 0.15;
+    }
+    if (pup3n===149) {
+        pup3n = 0;
+      }
+  }
+  if (pup2===6) {
+    powerup.setAnimation("powerupGreen_star_1");
+    if (elk.isTouching(powerup)&& (powerup.visible===true)) {
+        powerup.visible = false;
+        pup3e=1;
+      }
+    if (0<pup3e && (pup3e<150) && (powerup.visible===false)) {
+        pup3e = pup3e+1;
+        elk.scale = 0.3;
+      } else {
+      elk.scale = 0.15;
+    }
+    if (pup3e===150) {
+        pup3e = 0;
+        pup2 = 0;
+      }
+    if (nini.isTouching(powerup)&& (powerup.visible===true)) {
+        powerup.visible = false;
+        pup3n = 1;
+      }
+    if (0<pup3n && (pup3n<150) && (powerup.visible===false)) {
+        pup3n = pup3n+1;
+        nini.scale = 0.3;
+      } else {
+      nini.scale = 0.15;
+    }
+    if (pup3n===150) {
+        pup3n = 0;
+        pup2 = 0;
+      }
+  }
+  }
+  
+ function jet() {
+    if (f===500) {
+    abwurf = randomNumber(100, 300);
+    flugzeug.visible = true;
+    flugzeug.velocityX = 3;
+  }
+    if (flugzeug.x>=450) {
+    flugzeug.x=-100;
+    flugzeug.velocityX = 0;
+    flugzeug.visible = false;
+    f = 0;
+    drawSprites();
+  }
+}
 
 
 ### Donnerstag, der 22.11.2018<a name="24"></a>#
+Das Projekt ist jetzt mit allen wichtigen Funktionen fertiggestellt. Zu guter letzt haben wir uns dem Erstellen des Startbildschirmes und der Umsetzung der Spielerauswahlen gewidmet. Wie schon bei den powerups, war viel Geduld und Probieren möglich, bis wir jetzt schlussendlich zu einem Ergebnis gekommen sind, das uns überzeugt. Auch wenn der Mausklick zum Auswählen der Spielers manchmal als Doppelklick gewertet wird und so der zweite Spieler gleich mit ausgewählt wird, funktionert es zumeist sehr zuverlässich und mit Maus sowieso bessser als mit dem Trackpad auf dem MacBook. Die Startfunktion des Spiels haben wir folgendermaßen gestaltet:
 
+function button() {
+  if (player1.visible===true) {
+    playerselect11.visible = true;
+    playerselect12.visible = true;
+    playerselect13.visible = true;
+  } else {
+    playerselect11.visible = false;
+    playerselect12.visible = false;
+    playerselect13.visible = false;
+  }
+  if (player2.visible===true) {
+    playerselect21.visible = true;
+    playerselect22.visible = true;
+    playerselect23.visible = true;
+  } else {
+    playerselect21.visible = false;
+    playerselect22.visible = false;
+    playerselect23.visible = false;
+  }
+  if (player1.visible===true) {
+    if (mousePressedOver(playerselect11)) {
+      nini.setAnimation("elk");
+    }
+    if (mousePressedOver(playerselect12)) {
+      nini.setAnimation("cow_1");
+    }
+    if (mousePressedOver(playerselect13)) {
+      nini.setAnimation("elephant_happy_1");
+    }
+    drawSprites();
+  }
+  if (player1.visible===false && (player2.visible===true)) {
+    if (mousePressedOver(playerselect21)) {
+      elk.setAnimation("elk");
+    }
+    if (mousePressedOver(playerselect22)) {
+      elk.setAnimation("cow_1");
+    }
+    if (mousePressedOver(playerselect23)) {
+      elk.setAnimation("elephant_happy_1");
+  }
+    drawSprites();
+  }
+  if (mouseDown("leftButton") && player2.visible === true && player1.visible === false) {
+  player2.visible = false;
+  elk.visible = true;
+  nini.visible = true;
+  sun.visible = true;
+  ground3.visible = true;
+  ground2.visible = true;
+  ground.visible = true;
+  start1.visible = true;
+  start2.visible = true;
+  elk.x = start2.x;
+  elk.y = start2.y-5;
+  nini.x = start1.x;
+  nini.y = start1.y-5;
+  }
+  if ((mouseDown("leftButton"))&&(player1.visible===true)&&(player2.visible===false)) {
+  player1.visible = false;
+  player2.visible = true;
+  }
+  if (keyDown ("space")) {
+    start.visible = false;
+    player1.visible = true;
+    player2.visible = false;
+  elk.visible = false;
+  nini.visible = false;
+  sun.visible = false;
+  ground3.visible = false;
+  ground2.visible = false;
+  ground.visible = false;
+  start1.visible = false;
+  start2.visible = false;
+  elk.x = start2.x;
+  elk.y = start2.y-5;
+  nini.x = start1.x;
+  nini.y = start1.y-5;
+  }
+  drawSprites();
+}
 
 
 ### Freitag, der 23.11.2018<a name="25"></a>
-Heute haben wir die letzen kleinen Änderungen am Projekt vorgenommen und sowohl die Projektseite als auch das Arbeitsprotokoll fertiggestellt.
+Heute haben wir die letzen kleinen Änderungen wie Größen- und Geschwindigkeitsanpassungen am Projekt vorgenommen und sowohl die Projektseite als auch das Arbeitsprotokoll fertiggestellt.
