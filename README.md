@@ -18,7 +18,15 @@
 [Dienstag, der 30.10.2018](#14)                                           
 [Dienstag, der 06.11.2018](#15)                                        
 [Montag, der 12.11.2018](#16)                                             
-[Dienstag, der 13.11.2018](#17)                                                         
+[Dienstag, der 13.11.2018](#17)     
+[Mittwoch, der 14.11.2018](#18)
+[Freitag, der 16.11.2018](#19)
+[Samstag, der 17.11.2018](#20)
+[Montag, der 19.11.2018](#21)
+[Dienstag, der 20.11.2018](#22)
+[Mittwoch, der 21.11.2018](#23)
+[Donnerstag, der 22.11.2018](#24)
+[Freitag, der 23.11.2018](#25)
 
 ### Dienstag, der 21.08.2018<a name="1"></a>
 In der ersten Doppelstunde Informatik gab Herr Buhl uns zunächst eine kleine Einführung und erläuterte und das Vorgehen im nächsten Schuljahr. Daraufhin hatten wir etwas Zeit uns mit seiner eigenen Seite zum Thema <a href="https://github.com/jbuhl/InformatikUnterricht">"Wege durch den Informatikunterricht mit Herrn Buhl"<a/> zu beschäftigen. Auf dieser konnten wir uns mit einigen möglichen Programmen auseinandersetzen, was wir auch fleißig taten. Für uns standen zunächst auf Grund unser sehr eingeschränkten Erfahrungen im Programmieren, Greenfoot und Applab im Fokus.
@@ -60,23 +68,27 @@ Das bisherige Konzept eines "Jump 'n Runs" ist mehr oder minder aus der Unschlü
 Dadurch das es jetzt immer einen Sieger und einen Verlierer geben sollte, haben wir zunächst die Todesursache im Spiel festgelegt. Sobald einer der Sprites sich auf der Y-Achse über dem Wert 360 befinden, erscheint der Siegerbildschirm für den anderen Spieler, sprich entweder "Marcel won" oder "Nini won". (SCREENSHOTS)
 
 ### Montag, der 29.10.2018<a name="13"></a>
-
+Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs, für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt, jedoch ohen ein nennenswertes Ergebnis.
 
 ### Dienstag, der 30.10.2018<a name="14"></a>
-
+Heute haben wir es endlich geschafft den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials, die wir bis zu dem Zeitpunkt bewusst völlig außer Acht gelassen hatten. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen. Dieser hat sich leider als nicht praktisch erwiesen und zu hoch erwiesen. Deswegen beträgt er jetzt nur noch den Wert 2.
 
 ### Dienstag, der 06.11.2018<a name="15"></a>
 
 
 ### Montag, der 12.11.2018<a name="16"></a>
-Heute haben wir es endlich geschafft den Sprung zu optimieren. Geholfen haben uns dabei die Gamelab-eigenen Tutorials, die wir bis zu dem Zeitpunkt bewusst völlig außer Acht gelassen hatten. Für einen natürlich wirkenden Sprung haben wir uns unseren Wissens über die Physik bedient: Einer nach oben wirkenden Geschwindigkeit wirkt eine nach unten gerichtete Beschleunigung entgegen. Zuerst wollten wir als Beschleunigung den Wert 9,81 nutzen. Dieser hat sich leider als nicht praktisch erwiesen und zu hoch erwiesen. Deswegen beträgt er jetzt nur noch den Wert 2.
+
 
 ### Dienstag, der 13.11.2018<a name="17"></a>
-Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit das "spielfeld" vergrößert". Dementsprechend mussten wir auch die Sprunghöhe, sprich die Ausgangsgeschwindigkeit des Sprungs, für die Sprites anpassen. Heute entstand auch die erste Form eines Startmenüs. Dies bestand zunächst nur aus dem Text "start" vor einem hellblauen Hintergrund. Der Hintergrund war in Wirklichkeit auch der Hintergrund des Spiels, nur haben wir für das Startmenü sehr weit hereingezoomt. Um das Spiel zu "starten" musste man "1" drücken. Daraufhin wurde wieder herausgezoomt, der Text verschwand und man konnte spielen. (BILD) Auch das Thema "Kräftegleichgewicht" zwischen den beiden Sprites hat uns heute wieder beschäftigt. Leider sind wir noch zu keinern
-- Erhöhung "ground2" 
-  - dementsprechende Anpassung der Sprunghöhe 
-- Text "start" Konfig 
-- Arbeiten am Kräftegleichgewicht Nini und marci 
+ 
+ 
+### Mittwoch, der 14.11.2018<a name="18"></a>
+
+### Freitag, der 16.11.2018<a name="19"></a>
+
+### Samstag, der 17.11.2018<a name="20"></a>
+
+### Montag, der 19.11.2018<a name="21"></a>
 
 ### 14-19 November 2018
 - Ordnung
@@ -84,5 +96,10 @@ Für ein interessanteres Spiel haben wir den "ground2" höher gesetzt und damit 
 - Projektil
 - ground moves
 
-### Dienstag, der 20.11.2018
-- 
+### Dienstag, der 20.11.2018<a name="22"></a>
+-
+### Mittwoch, der 21.11.2018<a name="23"></a>
+
+### Donnerstag, der 22.11.2018<a name="24"></a>
+
+### Freitag, der 23.11.2018<a name="25"></a>
