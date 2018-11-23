@@ -247,11 +247,11 @@ Heute haben wir uns den Variablen gewidmet. Bei ein paar öffentlichen Projekten
 
 ### Donnerstag, der 15.11.2018<a name="19"></a>
 
-Wir haben uns weiter mit den Variablen beschäfrigt und herumexperimentiert
+Wir haben uns weiter mit den Variablen beschäftigt und herumexperimentiert. Außerdem haben wir das Design überarbeitet. Aufgrund der schwebenden Plattformen, haben wir uns dafür entschieden Wolken anstelle der Böden zu benutzen.
 
 ### Freitag, der 16.11.2018<a name="20"></a>
 
-Wir hielten es, vor allem auch auf Grund der unzuverlässigen Kollisionen in Gamelab, für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben, den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich mit Hilfe des vorgestern angeeigenten Wissens über Variablen bei diesem Code:
+Wir hielten es, vor allem auch auf Grund der unzuverlässigen Kollisionen in Gamelab, für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben, den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich mit Hilfe des vorgestern und gestern angeeigenten Wissens über Variablen bei diesem Code:
 
 ```
 function projectiles() {
@@ -375,7 +375,9 @@ function death() {
 
 ### Montag, der 19.11.2018<a name="23"></a>
 
-Wdoppelsprung wolekn
+Am Montag haben wir mit Hilfe von Variablen eine Begrenzung der Sprungmöglichkeiten der Charaktere eingeführt und dafür gesorgt, dass die Charaktere nicht mehr endlos springen können, sondern maximal einen Doppelsprung durch zweimaliges Klicken unternehmen können. 
+Eine weitere Neuerung sind Startplattformen für die Spieler. 
+
 
 
 ### Dienstag, der 20.11.2018<a name="24"></a>
