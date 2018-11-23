@@ -48,10 +48,35 @@ Heute haben wir uns mit den beiden Programmen näher auseinandergesetzt, die ges
 <img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/turtle%20beispiel%20protokoll.png" alt="image" width="500"> 
 
 ### Dienstag, der 28.08.2018<a name="3"></a>
-Während unserer Arbeit auf Applab, haben wir auf der seite <a href="https://studio.code.org/projects/public">"code.org"<a/> auch Gamelab entdeckt. Gamelab ist im Gegensatz zu Applab, wie der Name schon sagt, tendenziell besser für die Programmierung eines Spiels geeignet, durch die mögliche Erstellung von Sprites. Nun standen wir erneut vor einer Entscheidung, haben uns jedoch schnell für die Programmierung eines Spiels entschieden.
+Während unserer Arbeit auf Applab, haben wir auf der seite <a href="https://studio.code.org/projects/public">"code.org"<a/> auch Gamelab entdeckt. Gamelab ist im Gegensatz zu Applab, wie der Name schon sagt, tendenziell besser für die Programmierung eines Spiels geeignet, durch die mögliche Erstellung von Sprites. Nun standen wir erneut vor einer Entscheidung, haben uns jedoch schnell für die Programmierung eines Spiels entschieden. So nutzten wir die restliche Zeit in dieser Doppelstunde um uns mit Gamelab vertraut zu machen. 
 
 ### Sonntag, der 02.09.2018<a name="4"></a>
-Auch außerhalb des Unterrichts haben wir uns mit Informatik beschäftigt. An diesem Sonntag entstand unser erstes richtiges Konzept. Das Spiel sollte ein "Jump 'n Run" werden. Wir begannen auch direkt mit der Umsetzung. Zunächst erstellten wir den Hintergrund, eine Sonne, einen ersten Untergrund und einen Stein. (BILD) Als "Spielfigur" sollte ein Sprite dienen, für den wir eine Animation von Gamelab nutzten, die einen Elch darstellte. Dieser sollte natürlich auch steuerbar sein. Die Steuerung setzten wir mit "if-Klauseln" auf die Pfeiltasten. (BILD) Als erstes Feature programmierten wir, dass der Elch stirbt, sobald er herunterfällt oder die Sonne berührt. Geschieht dies erscheint eine "Todesnachricht" (Wasted) und man hört einen Sound. Außerdem verschwindet der Stein, wenn der Elch diesen berührt und der Elch wird zu einem Foto von Adriana. 
+Auch außerhalb des Unterrichts haben wir uns mit Informatik beschäftigt. An diesem Sonntag entstand unser erstes richtiges Konzept. Das Spiel sollte ein "Jump 'n Run" werden. Wir begannen auch direkt mit der Umsetzung. Zunächst erstellten wir den Hintergrund, eine Sonne, einen ersten Untergrund und einen Stein. 
+
+<img src="https://github.com/BohrisNaturalisRettner/ToDo/blob/master/Screenshot%20(34).png" alt="image" width="500"> 
+
+Als "Spielfigur" sollte ein Sprite dienen, für den wir eine Animation von Gamelab nutzten, die einen Elch darstellte. Dieser sollte natürlich auch steuerbar sein. Die Steuerung setzten wir mit "if-Klauseln" auf die Pfeiltasten. 
+
+```
+function draw() {
+  if (keyDown("left")) {
+    elk.x = elk.x-10;
+  }
+  if (keyDown("right")) {
+    elk.x = elk.x+10;
+  }
+  if (keyDown("up")) {
+    playSound("sound://category_digital/hop.mp3", false);
+    elk.velocityY = -10;
+  } else {
+    elk.velocityY = 10;
+  }
+  if (keyDown("down")) {
+    elk.y = elk.y+10;
+  }
+  drawSprites();
+```
+Als erstes Feature programmierten wir, dass der Elch stirbt, sobald er herunterfällt oder die Sonne berührt. Geschieht dies erscheint eine "Todesnachricht" (Wasted) und man hört einen Sound. Außerdem verschwindet der Stein, wenn der Elch diesen berührt. 
 
 ### Montag, der 03.09.2018<a name="5"></a>
 Heute haben wir versucht den Sprung dynamischer und natürlicher aussehen zu lassen. Leider sind wir nicht zu dem gewünschten Ergebnis gekommen. (Screenshot/GIF)
