@@ -4,7 +4,8 @@
 
 [Dienstag, der 21.08.2018](#1)                         
 [Montag, der 27.08.2018](#2)                         
-[Dienstag, der 28.08.2018](#3)                    
+[Dienstag, der 28.08.2018](#3)  
+
 [Sonntag, der 02.09.2018](#4)                        
 [Montag, der 03.09.2018](#5)                    
 [Samstag, der 08.09.2018](#6)                         
@@ -12,10 +13,12 @@
 [Montag, der 10.09.2018](#8)                                  
 [Dienstag, der 11.09.2018](#9)                                          
 [Montag, der 17.09.2018](#10)                                                   
-[Dienstag, der 18.09.2018](#11)                                             
+[Dienstag, der 18.09.2018](#11) 
+
 [Montag, der 22.10.2018](#12)                                           
 [Montag, der 29.10.2018](#13)                                            
-[Dienstag, der 30.10.2018](#14)                                           
+[Dienstag, der 30.10.2018](#14)  
+
 [Dienstag, der 06.11.2018](#15)                                        
 [Montag, der 12.11.2018](#16)                                             
 [Dienstag, der 13.11.2018](#17)                                                                 
