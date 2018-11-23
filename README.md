@@ -193,7 +193,7 @@ if (keyDown("down")) {
 
 ### Dienstag, der 06.11.2018<a name="15"></a>
 
-Die heutige Doppelstunde haben wir einzig und allein Github gewidmet. Zum einen mussten wir unserer Arbeitsprotokoll bearbeiten und in Reinform bringen und zum anderen an der Projektseite arbeiten, um am Ende der Zeit nicht in Stress zu verfallen. 
+Die heutige Doppelstunde haben wir einzig und allein Github gewidmet. Zum einen mussten wir unser Arbeitsprotokoll bearbeiten und in Reinform bringen und zum anderen an der Projektseite arbeiten, um am Ende der Zeit nicht in Stress zu verfallen. 
 
 ### Montag, der 12.11.2018<a name="16"></a>
 
@@ -202,7 +202,7 @@ Die Ordnung ist erneut ein Thema, das unserer Aufmerksamkeit bedarf. Nach vielen
 ### Dienstag, der 13.11.2018<a name="17"></a>
 
 Im Sinne unseres neuen Konzepts haben wir heute auch eine dritte Plattform programmiert. Diese und die zweite Plattform sollen sich auch bewegen und in gewissem Maße an zufälligen Orten spawnen. 
-
+```
 function grounds() {
   if (mouseDown("leftButton")&&(player2.visible===true||ground.visible===true)) {
     ground2.velocityX = -0.5;
@@ -221,7 +221,7 @@ function grounds() {
     ground3.velocityY = -0.5;
   }
 }
-
+```
 In diesem Code wurde zuerst festgelegt, dass der Spieler 2 einen Charakter ausgewählt haben muss, um die anderen Aktionen ins Rollen zu bringen. Ground 2 bekommt eine Geschwindigkeit in X-Richtung und Ground 3 eine Geschwindigkeit in Y-Richtung. Sobald sie auf ihrer Route einen gewissen Punkt überschritten haben bekommen sie eine entgegengesetzte Geschwindigkeit und machen sich auf den "Rückweg". So geht das theoretisch ewig hin und her.                                                                                  
 Im folgenden Code ist beschrieben, dass zum Beispiel Ground 1 seinen Mittelpunkt auf einem zufälligen Punkt auf der X-Achse zwischen 120 und 130 hat. Danach ist auch die Größe der PLattform vorgegeben mit 50 in der Höhe und 120 in der Breite.
 
@@ -244,11 +244,12 @@ ground3.width = 100;
  
 ### Mittwoch, der 14.11.2018<a name="18"></a>
 
-heute
+Heute haben wir uns den Variablen gewidmet. Bei ein paar öffentlichen Projekten haben wir gesehen, dass sie eine große Rolle spielen können und viele neue Funktionen ermöglichen. Also haben wir anhand von Versuchen mit den anderen Spielen als grobe Vorlage innerhalb und außerhalb des Hauptprojekts die Funktionsweise von Variablen erarbeitet und weiter erschlossen.
+
 
 ### Freitag, der 16.11.2018<a name="19"></a>
 
-Wir hielten es für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich bei diesem Code:
+Wir hielten es, vor allem auch auf Grund der unzuverlässigen Kollisionen in Gamelab, für notwendig, dass die Spieler unseres Spiels neben dem Herunterschubsen auch eine andere Möglichkeit haben den Gegner zu bezwingen. Für uns erschien eine Art Projektil logisch. So machten wir uns Gedanken und landeten schließlich mit Hilfe des vorgestern angeeigenten Wissens über Variablen bei diesem Code:
 
 ```
 function projectiles() {
@@ -294,17 +295,82 @@ function projectiles() {
 
 ### Samstag, der 17.11.2018<a name="20"></a>
 
+Ein weiterer Aspekt den wir an dem Projekt ändern mussten, um mehr Möglichkeiten zu haben war die Einführung von weiteren Funktionen als der Function(draw). Wir haben uns daraufhin mit diesem Thema auseinandergesetzt und die Funktionsweise von Funktionen besser verstanden. Daraufhin haben wir auch für früher erstellte Abläufe Funktionen angelegt. Dies bot zum einen eine bessere Übersicht zum anderen konnte man so viel leichter Abhängigkeiten verschiedener Abläufe festlegen.
 
 
 ### Montag, der 19.11.2018<a name="21"></a>
+Die neuen Entdeckungen haben uns sehr begeistert. Nachdem wir vorher ein wenig im Projekt festgefahren waren hat sind wir jetzt sehr motiviert unser Projekt zu verbessern. Dafür haben wir mehrere Ideen die wir bis zur Abgabe noch umsetzen wollten. Als erstes wollten wir einen Startbildschirm designen und es wie in "Smash" ermöglichen, sich vor dem Spiel seinen Charakter auszusuchen. Nach einiger Zeit haben wir aber gemerkt, dass sich die Umsetzung eines solchen Plans doch schwerer war als erwartet. Daraufhin haben wir uns dem Todesszenario zugewendet und die Umsetzung der Spielerauswahl erstmal aufgeschoben. Wir wollten eine Umsetzung der Tode, ohne, dass man das Programm an sich neu starten muss. Innerhalb einer neuen function(death) haben wir unsere Vorstellungen umgesetzt. 
 
+
+function death() {
+  if (nini.y >= 360) {
+    pup = 0;
+    pup3e = 0;
+    fill(rgb(0, 0, 0));
+    text("Player 1 died", 110, 150);
+    if (nini.visible===true) {
+      nini.visible=false;
+      scoreelk = scoreelk+1;
+    }
+    if (nini.visible===false) {
+      dnini = dnini+1;
+      if (dnini>30) {
+        elk.visible=true;
+        nini.visible=true;
+        start1.visible = true;
+        start2.visible = true;
+        nini.x=start1.x;
+        nini.y=start1.y-40;
+        elk.x=start2.x;
+        elk.y=start2.y-40;
+        dnini = 0;
+      }
+    }
+  } else if (elk.y >= 360) {
+    pup = 0;
+    pup3n = 0;
+    fill(rgb(0, 0, 0));
+    text("Player 2 died", 110, 150);
+    if (elk.visible === true) {
+      elk.visible=false;
+      scorenini = scorenini+1;
+    }
+    if (elk.visible===false) {
+      delk = delk+1;
+      if (delk>30) {
+        elk.visible=true;
+        nini.visible=true;
+        start1.visible = true;
+        start2.visible = true;
+        nini.x=start1.x;
+        nini.y=start1.y-40;
+        elk.x=start2.x;
+        elk.y=start2.y-40;
+        delk = 0;
+      }
+    }
+  }
+  fill(rgb(255, 255, 255));
+  rect(219, 0, 180, 70);
+  fill(rgb(0, 0, 0));
+  text("Spieler 2: "+scoreelk, 225, 60);
+  text("Spieler 1: "+scorenini, 225, 30);
+  drawSprites();
+  if (keyDown("0")) {
+    scorenini = 0;
+    scoreelk = 0;
+  }
+  if (elk.x<320) {
+    start2.visible = false;
+  }
+  if (nini.x>80) {
+    start1.visible = false;
+  }
+  drawSprites();
+}
 
 
 ### 14-19 November 2018
-- Ordnung
-- ground moves
-- Variablen 
-- Projektil
 - Scoreboard
 - Respawn
 - Startmenü
@@ -325,3 +391,4 @@ function projectiles() {
 
 
 ### Freitag, der 23.11.2018<a name="25"></a>
+Heute haben wir die letzen kleinen Änderungen am Projekt vorgenommen und sowohl die Projektseite als auch das Arbeitsprotokoll fertiggestellt.
